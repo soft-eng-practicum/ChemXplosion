@@ -11,6 +11,7 @@
 
 ###Team Info
 ####Fall 2017
+<<<<<<< HEAD
 Team Name: Technically Challenged (or Tech_Challenged)
 Repository Location: https://github.com/soft-eng-practicum/tech-challenged
 Communication: Software Development II Discord (#tech_challenged channel)
