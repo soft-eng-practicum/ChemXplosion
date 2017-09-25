@@ -16,3 +16,5 @@
 * Communication: Software Development II Discord (#tech_challenged channel)
 1. **Eric Jenkins** - Team Manager/Programmer	
 2. **Brendon Serrano** - UI/UX designer/Documentation lead/Programmer
+3. **Armando Gonzalez** - Database Manager/Tester/Programmer
+4. **Anjan(John) Panchatcharam** - Lead Programmer / UI/UX designer
