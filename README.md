@@ -7,7 +7,7 @@
 * Coming soon.
 
 ### Documentation
-* [Requirements] (/Documentation/Requirements) 
+* [Requirements] (https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements.docx) 
 * Storyboard
 * Diagrams coming soon
 
