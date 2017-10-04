@@ -7,7 +7,7 @@
 * Coming soon.
 
 ### Documentation
-* [Requirements] (../Documentation/Requirements) 
+* [Requirements] (/Documentation/Requirements) 
 * Storyboard
 * Diagrams coming soon
 
