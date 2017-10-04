@@ -8,7 +8,7 @@
 
 ### Documentation
 * [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements.docx) 
-* [Storyboard](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Story_Board_CHEM-XPLOSION.docx.docx)
+* [Storyboard](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Story%20Board%20CHEM-XPLOSION.docx)
 * Diagrams coming soon
 
 ### Team Info
