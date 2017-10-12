@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Onhit : MonoBehaviour {
 	public GameObject door;
-	public int counter =0;
+	public static int counter =0;
 	public GameObject explosion;
 	// Use this for initialization
 	void Start () {
