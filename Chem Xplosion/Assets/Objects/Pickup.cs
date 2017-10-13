@@ -16,7 +16,6 @@ public class Pickup : MonoBehaviour {
 	void Start () {
 		hands = GameObject.Find ("PickupLoc").transform;
 		player = GameObject.Find ("Player");
-		playerController = player.GetComponent<PlayerController> ();
 	}
 	
 	// Update is called once per frame

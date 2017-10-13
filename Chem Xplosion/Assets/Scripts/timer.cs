@@ -12,6 +12,8 @@ public class timer : MonoBehaviour {
 
 	bool activeTimer;
 
+	public static int toggleTimer = 0;
+
 	void Start()
 	{
 		activeTimer = true;
@@ -31,9 +33,24 @@ public class timer : MonoBehaviour {
 
 		myTimer.text = string.Format ("{0:00} : {1:00}", minutes, seconds);
 
-		if (itemCounter == 3) {
-			stopTimer();
+		if (itemCounter == 2) {
+			stopTimer ();
 		}
+
+		//*************** Timer Tester **********************
+
+//		if (Input.GetButtonDown ("L")) {
+//			toggleTimer++;
+//		}
+//
+//		if (toggleTimer % 2 == 0) {
+//			activeTimer = true;
+//		} 
+//		else {
+//			activeTimer = false;
+//		}
+
+		//*************** Timer Tester ***********************
 
 	}
 
