@@ -27,11 +27,13 @@ public class timer : MonoBehaviour {
 			time += Time.deltaTime;
 		}
 
-		float minutes = time / 60f; 
+		float minutes =  Mathf.FloorToInt(time / 60f); 
 
 		float seconds = time % 60f;
 
-		myTimer.text = string.Format ("{0:00} : {1:00}", minutes, seconds);
+		float fraction = (time * 100f) % 100f;
+
+		myTimer.text = string.Format ("{0:00} : {1:00} : {2:00} ", minutes, seconds, fraction);
 
 		if (itemCounter == 2) {
 			stopTimer ();

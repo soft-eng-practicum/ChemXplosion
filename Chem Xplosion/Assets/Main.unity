@@ -857,7 +857,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTimer: {fileID: 1665346222}
-  toggleTimer: 0
 --- !u!114 &1665346222
 MonoBehaviour:
   m_ObjectHideFlags: 0
