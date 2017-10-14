@@ -7,6 +7,7 @@ TagManager:
   - Placemat
   - Pickupable
   - Door
+  - Test
   layers:
   - Default
   - TransparentFX

@@ -19,7 +19,7 @@ public class Onhit : MonoBehaviour {
 	}
 		void OnCollisionEnter(Collision col)
 		{
-		if (col.gameObject.name == "Red" || col.gameObject.name == "Blue")
+		if (col.gameObject.name == "Red" || col.gameObject.name == "Blue" || col.gameObject.tag == "Test")
 			{
 			counter++;
 			Destroy (col.gameObject);
