@@ -2,17 +2,48 @@ fileFormatVersion: 2
 guid: 65fb86f734ce568408b3eaad4fca1b60
 timeCreated: 18446744011573954816
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
+    100000: base
+    100002: door
+    100004: frame
+    100006: frame_col
+    100008: //RootNode
+    400000: base
+    400002: door
+    400004: frame
+    400006: frame_col
+    400008: //RootNode
+    2300000: base
+    2300002: door
+    2300004: frame
+    2300006: frame_col
+    3300000: base
+    3300002: door
+    3300004: frame
+    3300006: frame_col
     4300000: frame_col
     4300002: Cylinder.004
     4300004: door
     4300006: frame
     4300008: base
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 61a27d8515fdcc64e9d7643e84663bdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door
+    second: {fileID: 2100000, guid: dea376d96a33e084bb54684d0922971f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -25,6 +56,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
