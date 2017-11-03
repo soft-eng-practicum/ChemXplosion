@@ -6,6 +6,7 @@ public class Onhit : MonoBehaviour {
 	public GameObject door;
 	public static int counter = 0;
 	public GameObject explosion;
+	public static bool isComplete_Puzzle_1 = false;
 	// Use this for initialization
 	void Start () {
 	}
@@ -14,7 +15,7 @@ public class Onhit : MonoBehaviour {
 	void Update () {
 
 		if (counter == 2) {
-			destroyDoor ();
+			destroyLock ();
 		}
 	}
 		void OnCollisionEnter(Collision col)
@@ -32,13 +33,11 @@ public class Onhit : MonoBehaviour {
 
 		}
 
-	void destroyDoor(){
+	void destroyLock(){
 	//	Destroy (door);
 		Instantiate (explosion,transform.position, Quaternion.identity);
 		Destroy (gameObject);
+		isComplete_Puzzle_1 = true;
 	}
-	void destroyExplosion(){
-		Destroy (explosion);
-	}
-	}
+}
 
