@@ -11,6 +11,8 @@ public class Test_Text : MonoBehaviour {
 
 	public static int tempTimer;
 
+	public static int chestCounter;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -22,7 +24,9 @@ public class Test_Text : MonoBehaviour {
 
 		tempTimer = timer.toggleTimer;
 
+		chestCounter = ChestOpen.counter;
 
-		myText.text = ("Item Count: " + itemCounter);
+
+		myText.text = ("Item Count: " + itemCounter + " test chest counter: " + chestCounter);
 	}
 }
