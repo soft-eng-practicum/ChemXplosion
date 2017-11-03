@@ -33,7 +33,7 @@ public class Onhit : MonoBehaviour {
 		}
 
 	void destroyDoor(){
-		Destroy (door);
+	//	Destroy (door);
 		Instantiate (explosion,transform.position, Quaternion.identity);
 		Destroy (gameObject);
 	}
