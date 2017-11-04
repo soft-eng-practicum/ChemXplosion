@@ -15975,7 +15975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36954f08f26ea8143af7263a5ad8cbec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 1
 --- !u!95 &268623356
 Animator:
   serializedVersion: 3
@@ -15985,7 +15984,7 @@ Animator:
   m_GameObject: {fileID: 268623353}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a660ed3962a64f48a4bb0970dcd390e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 00af10481e273724fb7999b4a0e008c1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16003,8 +16002,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.8272796, y: 5.3719325, z: 3.4999988}
-  m_Center: {x: -2.6100087, y: 2.255538, z: 1.7499998}
+  m_Size: {x: 7, y: 8.5, z: 3.5}
+  m_Center: {x: -3, y: 0.5, z: 1.7499995}
 --- !u!1 &268939114
 GameObject:
   m_ObjectHideFlags: 0
@@ -21771,7 +21770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36954f08f26ea8143af7263a5ad8cbec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 1
 --- !u!95 &386836590
 Animator:
   serializedVersion: 3
@@ -21781,7 +21779,7 @@ Animator:
   m_GameObject: {fileID: 386836587}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a660ed3962a64f48a4bb0970dcd390e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 00af10481e273724fb7999b4a0e008c1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21799,8 +21797,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.7736473, y: 5.3719325, z: 3.4999988}
-  m_Center: {x: -2.6368246, y: 2.255538, z: 1.7499998}
+  m_Size: {x: 7, y: 8.5, z: 3.5000002}
+  m_Center: {x: -3, y: 0.5, z: 1.7499999}
 --- !u!1 &387702024
 GameObject:
   m_ObjectHideFlags: 0
@@ -46559,7 +46557,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -19.813534
+      value: -19.8
       objectReference: {fileID: 0}
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -46567,7 +46565,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -9.06472
+      value: -9.2
       objectReference: {fileID: 0}
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -46611,7 +46609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419594, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 192030, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -47971,7 +47969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36954f08f26ea8143af7263a5ad8cbec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 1
 --- !u!95 &837162640
 Animator:
   serializedVersion: 3
@@ -47999,6 +47996,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 4.7736473, y: 5.6939673, z: 3.4999988}
   m_Center: {x: -2.6368244, y: -3.1429842, z: 1.7499998}
 --- !u!1 &837748349
@@ -48088,6 +48086,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 837748349}
   m_Mesh: {fileID: 4300000, guid: 318fc5659f68549feb9d55d15a12de2a, type: 3}
+=======
+  m_Size: {x: 7, y: 8.5, z: 3.5}
+  m_Center: {x: -3, y: -1.5, z: 1.7499995}
+>>>>>>> 3b2379de524191feca206ab8b9697907675f0649
 --- !u!1 &837977644
 GameObject:
   m_ObjectHideFlags: 0
@@ -55473,8 +55475,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.7736473, y: 5.6939673, z: 3.4999988}
-  m_Center: {x: -2.6368244, y: -3.1429842, z: 1.7499998}
+  m_Size: {x: 7, y: 3.3616846, z: 3.5000002}
+  m_Center: {x: -2.9999998, y: -2.0691583, z: 1.7499999}
 --- !u!114 &986810306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55486,7 +55488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36954f08f26ea8143af7263a5ad8cbec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 1
 --- !u!95 &986810307
 Animator:
   serializedVersion: 3
@@ -62011,7 +62012,7 @@ Animator:
   m_GameObject: {fileID: 1136464561}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a660ed3962a64f48a4bb0970dcd390e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 00af10481e273724fb7999b4a0e008c1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -62029,8 +62030,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.7736473, y: 5.3719325, z: 3.4999988}
-  m_Center: {x: -2.6368246, y: 2.255538, z: 1.7499998}
+  m_Size: {x: 7, y: 5.3593335, z: 3.5000002}
+  m_Center: {x: -3, y: 2.0703335, z: 1.7499999}
 --- !u!114 &1136464568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62042,7 +62043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36954f08f26ea8143af7263a5ad8cbec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 1
 --- !u!1 &1137553542
 GameObject:
   m_ObjectHideFlags: 0
@@ -72355,7 +72355,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -13.813534
+      value: -13.8
       objectReference: {fileID: 0}
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -72363,7 +72363,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -10.06472
+      value: -10.2
       objectReference: {fileID: 0}
     - target: {fileID: 421664, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -87331,7 +87331,7 @@ Animator:
   m_GameObject: {fileID: 1636922257}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a660ed3962a64f48a4bb0970dcd390e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 00af10481e273724fb7999b4a0e008c1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -103179,7 +103179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36954f08f26ea8143af7263a5ad8cbec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  close: 1
 --- !u!95 &1947831012
 Animator:
   serializedVersion: 3
@@ -103207,8 +103206,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5733395, y: 5.6939673, z: 3.4999988}
-  m_Center: {x: -3.0366707, y: -3.142984, z: 1.7499998}
+  m_Size: {x: 7, y: 8.5, z: 3.5}
+  m_Center: {x: -3, y: -1.5, z: 1.7499995}
 --- !u!1 &1949640435
 GameObject:
   m_ObjectHideFlags: 0

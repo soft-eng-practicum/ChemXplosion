@@ -24,7 +24,7 @@ public class Test_Text : MonoBehaviour {
 
 		tempTimer = timer.toggleTimer;
 
-		chestCounter = ChestOpen.counter;
+		chestCounter = DoorOpener.dCounter;
 
 
 		myText.text = ("Item Count: " + itemCounter + " test chest counter: " + chestCounter);

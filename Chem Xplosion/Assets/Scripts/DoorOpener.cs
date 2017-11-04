@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorOpener : MonoBehaviour {
 
 	private Animator dAnimate;
-	public bool close = true;
+	public static int dCounter = 0;
 	// Use this for initialization
 	void Start () {
 		dAnimate = GetComponent<Animator> ();
@@ -14,19 +14,22 @@ public class DoorOpener : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.tag == "Player") {
 			dAnimate.SetBool ("open", true);
-			close = false;
+			//dCounter++;
 		}
 		}
+
+	void OnTriggerExit(Collider col){
+		if (col.tag == "Player") {
+			closeDoor();
+			//dCounter--;
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (close == false) {
-			Invoke ("closeDoor", 3);
-		}
 	}
 
 	void closeDoor(){
 		dAnimate.SetBool ("open", false);
-		close = true;
 	}
 }
