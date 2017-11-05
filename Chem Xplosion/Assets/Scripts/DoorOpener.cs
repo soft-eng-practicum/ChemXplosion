@@ -6,6 +6,7 @@ public class DoorOpener : MonoBehaviour {
 
 	private Animator dAnimate;
 	public static int dCounter = 0;
+	public static bool trigger = false;
 	// Use this for initialization
 	void Start () {
 		dAnimate = GetComponent<Animator> ();
@@ -14,6 +15,7 @@ public class DoorOpener : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.tag == "Player") {
 			dAnimate.SetBool ("open", true);
+			trigger = true;
 			//dCounter++;
 		}
 		}
@@ -21,6 +23,7 @@ public class DoorOpener : MonoBehaviour {
 	void OnTriggerExit(Collider col){
 		if (col.tag == "Player") {
 			closeDoor();
+			trigger = false;
 			//dCounter--;
 		}
 	}

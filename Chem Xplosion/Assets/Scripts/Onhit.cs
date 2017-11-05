@@ -9,6 +9,7 @@ public class Onhit : MonoBehaviour {
 	public static bool isComplete_Puzzle_1 = false;
 	// Use this for initialization
 	void Start () {
+
 	}
 	
 	// Update is called once per frame
@@ -39,5 +40,6 @@ public class Onhit : MonoBehaviour {
 		Destroy (gameObject);
 		isComplete_Puzzle_1 = true;
 	}
+
 }
 
