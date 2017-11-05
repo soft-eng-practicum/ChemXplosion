@@ -1,0 +1,1160 @@
+fileFormatVersion: 2
+guid: 70f78be1e034af54790b7297093153f7
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: char_astrella_body_001
+    100004: char_astrella_buckles_001
+    100006: char_astrella_eyelashes_001
+    100008: char_astrella_eyes_001
+    100010: char_astrella_glass_001
+    100012: char_astrella_helmet_001
+    100014: char_astrella_shoulders_001
+    100016: Astrella1_Ctrl_ChestEndEffector
+    100018: Astrella1_Ctrl_ChestOriginEffector
+    100020: Astrella1_Ctrl_Head
+    100022: Astrella1_Ctrl_HeadEffector
+    100024: Astrella1_Ctrl_Hips
+    100026: Astrella1_Ctrl_HipsEffector
+    100028: Astrella1_Ctrl_LeftAnkleEffector
+    100030: Astrella1_Ctrl_LeftArm
+    100032: Astrella1_Ctrl_LeftElbowEffector
+    100034: Astrella1_Ctrl_LeftFoot
+    100036: Astrella1_Ctrl_LeftFootExtraFinger1
+    100038: Astrella1_Ctrl_LeftFootExtraFingerEffector
+    100040: Astrella1_Ctrl_LeftForeArm
+    100042: Astrella1_Ctrl_LeftHand
+    100044: Astrella1_Ctrl_LeftHandIndex1
+    100046: Astrella1_Ctrl_LeftHandIndex2
+    100048: Astrella1_Ctrl_LeftHandIndex3
+    100050: Astrella1_Ctrl_LeftHandIndexEffector
+    100052: Astrella1_Ctrl_LeftHandMiddle1
+    100054: Astrella1_Ctrl_LeftHandMiddle2
+    100056: Astrella1_Ctrl_LeftHandMiddle3
+    100058: Astrella1_Ctrl_LeftHandMiddleEffector
+    100060: Astrella1_Ctrl_LeftHandPinky1
+    100062: Astrella1_Ctrl_LeftHandPinky2
+    100064: Astrella1_Ctrl_LeftHandPinky3
+    100066: Astrella1_Ctrl_LeftHandPinkyEffector
+    100068: Astrella1_Ctrl_LeftHandRing1
+    100070: Astrella1_Ctrl_LeftHandRing2
+    100072: Astrella1_Ctrl_LeftHandRing3
+    100074: Astrella1_Ctrl_LeftHandRingEffector
+    100076: Astrella1_Ctrl_LeftHandThumb1
+    100078: Astrella1_Ctrl_LeftHandThumb2
+    100080: Astrella1_Ctrl_LeftHandThumb3
+    100082: Astrella1_Ctrl_LeftHandThumbEffector
+    100084: Astrella1_Ctrl_LeftHipEffector
+    100086: Astrella1_Ctrl_LeftKneeEffector
+    100088: Astrella1_Ctrl_LeftLeg
+    100090: Astrella1_Ctrl_LeftShoulder
+    100092: Astrella1_Ctrl_LeftShoulderEffector
+    100094: Astrella1_Ctrl_LeftUpLeg
+    100096: Astrella1_Ctrl_LeftWristEffector
+    100098: Astrella1_Ctrl_Neck
+    100100: Astrella1_Ctrl_RightAnkleEffector
+    100102: Astrella1_Ctrl_RightArm
+    100104: Astrella1_Ctrl_RightElbowEffector
+    100106: Astrella1_Ctrl_RightFoot
+    100108: Astrella1_Ctrl_RightFootExtraFinger1
+    100110: Astrella1_Ctrl_RightFootExtraFingerEffector
+    100112: Astrella1_Ctrl_RightForeArm
+    100114: Astrella1_Ctrl_RightHand
+    100116: Astrella1_Ctrl_RightHandIndex1
+    100118: Astrella1_Ctrl_RightHandIndex2
+    100120: Astrella1_Ctrl_RightHandIndex3
+    100122: Astrella1_Ctrl_RightHandIndexEffector
+    100124: Astrella1_Ctrl_RightHandMiddle1
+    100126: Astrella1_Ctrl_RightHandMiddle2
+    100128: Astrella1_Ctrl_RightHandMiddle3
+    100130: Astrella1_Ctrl_RightHandMiddleEffector
+    100132: Astrella1_Ctrl_RightHandPinky1
+    100134: Astrella1_Ctrl_RightHandPinky2
+    100136: Astrella1_Ctrl_RightHandPinky3
+    100138: Astrella1_Ctrl_RightHandPinkyEffector
+    100140: Astrella1_Ctrl_RightHandRing1
+    100142: Astrella1_Ctrl_RightHandRing2
+    100144: Astrella1_Ctrl_RightHandRing3
+    100146: Astrella1_Ctrl_RightHandRingEffector
+    100148: Astrella1_Ctrl_RightHandThumb1
+    100150: Astrella1_Ctrl_RightHandThumb2
+    100152: Astrella1_Ctrl_RightHandThumb3
+    100154: Astrella1_Ctrl_RightHandThumbEffector
+    100156: Astrella1_Ctrl_RightHipEffector
+    100158: Astrella1_Ctrl_RightKneeEffector
+    100160: Astrella1_Ctrl_RightLeg
+    100162: Astrella1_Ctrl_RightShoulder
+    100164: Astrella1_Ctrl_RightShoulderEffector
+    100166: Astrella1_Ctrl_RightUpLeg
+    100168: Astrella1_Ctrl_RightWristEffector
+    100170: Astrella1_Ctrl_Spine
+    100172: Astrella1_Ctrl_Spine1
+    100174: Astrella1_Ctrl_Spine2
+    100176: Astrella3
+    100178: AstrellaHelmet
+    100180: char_astrella
+    100182: char_astrella_control_Reference
+    100184: char_astrella_Head
+    100186: char_astrella_Hips1
+    100188: char_astrella_LeftArm
+    100190: char_astrella_LeftFoot
+    100192: char_astrella_LeftForeArm
+    100194: char_astrella_LeftHand
+    100196: char_astrella_LeftHandIndex1
+    100198: char_astrella_LeftHandIndex2
+    100200: char_astrella_LeftHandIndex3
+    100202: char_astrella_LeftHandIndex4
+    100204: char_astrella_LeftHandMiddle1
+    100206: char_astrella_LeftHandMiddle2
+    100208: char_astrella_LeftHandMiddle3
+    100210: char_astrella_LeftHandMiddle4
+    100212: char_astrella_LeftHandPinky1
+    100214: char_astrella_LeftHandPinky2
+    100216: char_astrella_LeftHandPinky3
+    100218: char_astrella_LeftHandPinky4
+    100220: char_astrella_LeftHandRing1
+    100222: char_astrella_LeftHandRing2
+    100224: char_astrella_LeftHandRing3
+    100226: char_astrella_LeftHandRing4
+    100228: char_astrella_LeftHandThumb1
+    100230: char_astrella_LeftHandThumb2
+    100232: char_astrella_LeftHandThumb3
+    100234: char_astrella_LeftHandThumb4
+    100236: char_astrella_LeftLeg
+    100238: char_astrella_LeftShoulder
+    100240: char_astrella_LeftToeBase
+    100242: char_astrella_LeftUpLeg
+    100244: char_astrella_Neck
+    100246: char_astrella_Reference
+    100248: char_astrella_RightArm
+    100250: char_astrella_RightFoot
+    100252: char_astrella_RightForeArm
+    100254: char_astrella_RightHand
+    100256: char_astrella_RightHandIndex1
+    100258: char_astrella_RightHandIndex2
+    100260: char_astrella_RightHandIndex3
+    100262: char_astrella_RightHandIndex4
+    100264: char_astrella_RightHandMiddle1
+    100266: char_astrella_RightHandMiddle2
+    100268: char_astrella_RightHandMiddle3
+    100270: char_astrella_RightHandMiddle4
+    100272: char_astrella_RightHandPinky1
+    100274: char_astrella_RightHandPinky2
+    100276: char_astrella_RightHandPinky3
+    100278: char_astrella_RightHandPinky4
+    100280: char_astrella_RightHandRing1
+    100282: char_astrella_RightHandRing2
+    100284: char_astrella_RightHandRing3
+    100286: char_astrella_RightHandRing4
+    100288: char_astrella_RightHandThumb1
+    100290: char_astrella_RightHandThumb2
+    100292: char_astrella_RightHandThumb3
+    100294: char_astrella_RightHandThumb4
+    100296: char_astrella_RightLeg
+    100298: char_astrella_RightShoulder
+    100300: char_astrella_RightToeBase
+    100302: char_astrella_RightUpLeg
+    100304: char_astrella_Spine
+    100306: char_astrella_Spine1
+    100308: char_astrella_Spine2
+    100310: char_astrella_body
+    100312: char_astrella_helmet
+    100314: char_astrella_reference
+    100316: char_astrella_skeleton
+    400000: //RootNode
+    400002: char_astrella_body_001
+    400004: char_astrella_buckles_001
+    400006: char_astrella_eyelashes_001
+    400008: char_astrella_eyes_001
+    400010: char_astrella_glass_001
+    400012: char_astrella_helmet_001
+    400014: char_astrella_shoulders_001
+    400016: Astrella1_Ctrl_ChestEndEffector
+    400018: Astrella1_Ctrl_ChestOriginEffector
+    400020: Astrella1_Ctrl_Head
+    400022: Astrella1_Ctrl_HeadEffector
+    400024: Astrella1_Ctrl_Hips
+    400026: Astrella1_Ctrl_HipsEffector
+    400028: Astrella1_Ctrl_LeftAnkleEffector
+    400030: Astrella1_Ctrl_LeftArm
+    400032: Astrella1_Ctrl_LeftElbowEffector
+    400034: Astrella1_Ctrl_LeftFoot
+    400036: Astrella1_Ctrl_LeftFootExtraFinger1
+    400038: Astrella1_Ctrl_LeftFootExtraFingerEffector
+    400040: Astrella1_Ctrl_LeftForeArm
+    400042: Astrella1_Ctrl_LeftHand
+    400044: Astrella1_Ctrl_LeftHandIndex1
+    400046: Astrella1_Ctrl_LeftHandIndex2
+    400048: Astrella1_Ctrl_LeftHandIndex3
+    400050: Astrella1_Ctrl_LeftHandIndexEffector
+    400052: Astrella1_Ctrl_LeftHandMiddle1
+    400054: Astrella1_Ctrl_LeftHandMiddle2
+    400056: Astrella1_Ctrl_LeftHandMiddle3
+    400058: Astrella1_Ctrl_LeftHandMiddleEffector
+    400060: Astrella1_Ctrl_LeftHandPinky1
+    400062: Astrella1_Ctrl_LeftHandPinky2
+    400064: Astrella1_Ctrl_LeftHandPinky3
+    400066: Astrella1_Ctrl_LeftHandPinkyEffector
+    400068: Astrella1_Ctrl_LeftHandRing1
+    400070: Astrella1_Ctrl_LeftHandRing2
+    400072: Astrella1_Ctrl_LeftHandRing3
+    400074: Astrella1_Ctrl_LeftHandRingEffector
+    400076: Astrella1_Ctrl_LeftHandThumb1
+    400078: Astrella1_Ctrl_LeftHandThumb2
+    400080: Astrella1_Ctrl_LeftHandThumb3
+    400082: Astrella1_Ctrl_LeftHandThumbEffector
+    400084: Astrella1_Ctrl_LeftHipEffector
+    400086: Astrella1_Ctrl_LeftKneeEffector
+    400088: Astrella1_Ctrl_LeftLeg
+    400090: Astrella1_Ctrl_LeftShoulder
+    400092: Astrella1_Ctrl_LeftShoulderEffector
+    400094: Astrella1_Ctrl_LeftUpLeg
+    400096: Astrella1_Ctrl_LeftWristEffector
+    400098: Astrella1_Ctrl_Neck
+    400100: Astrella1_Ctrl_RightAnkleEffector
+    400102: Astrella1_Ctrl_RightArm
+    400104: Astrella1_Ctrl_RightElbowEffector
+    400106: Astrella1_Ctrl_RightFoot
+    400108: Astrella1_Ctrl_RightFootExtraFinger1
+    400110: Astrella1_Ctrl_RightFootExtraFingerEffector
+    400112: Astrella1_Ctrl_RightForeArm
+    400114: Astrella1_Ctrl_RightHand
+    400116: Astrella1_Ctrl_RightHandIndex1
+    400118: Astrella1_Ctrl_RightHandIndex2
+    400120: Astrella1_Ctrl_RightHandIndex3
+    400122: Astrella1_Ctrl_RightHandIndexEffector
+    400124: Astrella1_Ctrl_RightHandMiddle1
+    400126: Astrella1_Ctrl_RightHandMiddle2
+    400128: Astrella1_Ctrl_RightHandMiddle3
+    400130: Astrella1_Ctrl_RightHandMiddleEffector
+    400132: Astrella1_Ctrl_RightHandPinky1
+    400134: Astrella1_Ctrl_RightHandPinky2
+    400136: Astrella1_Ctrl_RightHandPinky3
+    400138: Astrella1_Ctrl_RightHandPinkyEffector
+    400140: Astrella1_Ctrl_RightHandRing1
+    400142: Astrella1_Ctrl_RightHandRing2
+    400144: Astrella1_Ctrl_RightHandRing3
+    400146: Astrella1_Ctrl_RightHandRingEffector
+    400148: Astrella1_Ctrl_RightHandThumb1
+    400150: Astrella1_Ctrl_RightHandThumb2
+    400152: Astrella1_Ctrl_RightHandThumb3
+    400154: Astrella1_Ctrl_RightHandThumbEffector
+    400156: Astrella1_Ctrl_RightHipEffector
+    400158: Astrella1_Ctrl_RightKneeEffector
+    400160: Astrella1_Ctrl_RightLeg
+    400162: Astrella1_Ctrl_RightShoulder
+    400164: Astrella1_Ctrl_RightShoulderEffector
+    400166: Astrella1_Ctrl_RightUpLeg
+    400168: Astrella1_Ctrl_RightWristEffector
+    400170: Astrella1_Ctrl_Spine
+    400172: Astrella1_Ctrl_Spine1
+    400174: Astrella1_Ctrl_Spine2
+    400176: Astrella3
+    400178: AstrellaHelmet
+    400180: char_astrella
+    400182: char_astrella_control_Reference
+    400184: char_astrella_Head
+    400186: char_astrella_Hips1
+    400188: char_astrella_LeftArm
+    400190: char_astrella_LeftFoot
+    400192: char_astrella_LeftForeArm
+    400194: char_astrella_LeftHand
+    400196: char_astrella_LeftHandIndex1
+    400198: char_astrella_LeftHandIndex2
+    400200: char_astrella_LeftHandIndex3
+    400202: char_astrella_LeftHandIndex4
+    400204: char_astrella_LeftHandMiddle1
+    400206: char_astrella_LeftHandMiddle2
+    400208: char_astrella_LeftHandMiddle3
+    400210: char_astrella_LeftHandMiddle4
+    400212: char_astrella_LeftHandPinky1
+    400214: char_astrella_LeftHandPinky2
+    400216: char_astrella_LeftHandPinky3
+    400218: char_astrella_LeftHandPinky4
+    400220: char_astrella_LeftHandRing1
+    400222: char_astrella_LeftHandRing2
+    400224: char_astrella_LeftHandRing3
+    400226: char_astrella_LeftHandRing4
+    400228: char_astrella_LeftHandThumb1
+    400230: char_astrella_LeftHandThumb2
+    400232: char_astrella_LeftHandThumb3
+    400234: char_astrella_LeftHandThumb4
+    400236: char_astrella_LeftLeg
+    400238: char_astrella_LeftShoulder
+    400240: char_astrella_LeftToeBase
+    400242: char_astrella_LeftUpLeg
+    400244: char_astrella_Neck
+    400246: char_astrella_Reference
+    400248: char_astrella_RightArm
+    400250: char_astrella_RightFoot
+    400252: char_astrella_RightForeArm
+    400254: char_astrella_RightHand
+    400256: char_astrella_RightHandIndex1
+    400258: char_astrella_RightHandIndex2
+    400260: char_astrella_RightHandIndex3
+    400262: char_astrella_RightHandIndex4
+    400264: char_astrella_RightHandMiddle1
+    400266: char_astrella_RightHandMiddle2
+    400268: char_astrella_RightHandMiddle3
+    400270: char_astrella_RightHandMiddle4
+    400272: char_astrella_RightHandPinky1
+    400274: char_astrella_RightHandPinky2
+    400276: char_astrella_RightHandPinky3
+    400278: char_astrella_RightHandPinky4
+    400280: char_astrella_RightHandRing1
+    400282: char_astrella_RightHandRing2
+    400284: char_astrella_RightHandRing3
+    400286: char_astrella_RightHandRing4
+    400288: char_astrella_RightHandThumb1
+    400290: char_astrella_RightHandThumb2
+    400292: char_astrella_RightHandThumb3
+    400294: char_astrella_RightHandThumb4
+    400296: char_astrella_RightLeg
+    400298: char_astrella_RightShoulder
+    400300: char_astrella_RightToeBase
+    400302: char_astrella_RightUpLeg
+    400304: char_astrella_Spine
+    400306: char_astrella_Spine1
+    400308: char_astrella_Spine2
+    400310: char_astrella_body
+    400312: char_astrella_helmet
+    400314: char_astrella_reference
+    400316: char_astrella_skeleton
+    2300000: char_astrella_body_001
+    2300002: char_astrella_buckles_001
+    2300004: char_astrella_eyelashes_001
+    2300006: char_astrella_eyes_001
+    2300008: char_astrella_glass_001
+    2300010: char_astrella_helmet_001
+    2300012: char_astrella_shoulders_001
+    3300000: char_astrella_body_001
+    3300002: char_astrella_buckles_001
+    3300004: char_astrella_eyelashes_001
+    3300006: char_astrella_eyes_001
+    3300008: char_astrella_glass_001
+    3300010: char_astrella_helmet_001
+    3300012: char_astrella_shoulders_001
+    4300000: char_astrella_buckles_001
+    4300002: char_astrella_shoulders_001
+    4300004: char_astrella_eyes_001
+    4300006: char_astrella_eyelashes_001
+    4300008: char_astrella_body_001
+    4300010: char_astrella_helmet_001
+    4300012: char_astrella_glass_001
+    4300014: AstrellaHelmet
+    4300016: Astrella3
+    4300018: char_astrella_helmet
+    4300020: char_astrella_body
+    9500000: //RootNode
+    13700000: Astrella3
+    13700002: AstrellaHelmet
+    13700004: char_astrella_body
+    13700006: char_astrella_helmet
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: char_astrella_Hips1
+      humanName: Hips
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.06940543, y: 0, z: 0.034702715}
+        length: 0.086756825
+        modified: 1
+    - boneName: char_astrella_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: -60.000004, y: -60.000004, z: -90}
+        max: {x: 60.000004, y: 60.000004, z: 50}
+        value: {x: 0.38775712, y: 0, z: 0.19387856}
+        length: 0.48469654
+        modified: 1
+    - boneName: char_astrella_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: -60.000004, y: -60.000004, z: -90}
+        max: {x: 60.000004, y: 60.000004, z: 50}
+        value: {x: 0.38775712, y: 0, z: 0.19387856}
+        length: 0.48469654
+        modified: 1
+    - boneName: char_astrella_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.30437303, y: 0, z: 0.15218651}
+        length: 0.38046643
+        modified: 1
+    - boneName: char_astrella_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.30437306, y: 0, z: 0.15218653}
+        length: 0.38046646
+        modified: 1
+    - boneName: char_astrella_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: -30.000002, z: -50}
+        max: {x: 0, y: 30.000002, z: 50}
+        value: {x: 0.13146867, y: 0, z: 0.065734334}
+        length: 0.1643359
+        modified: 1
+    - boneName: char_astrella_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: -30.000002, z: -50}
+        max: {x: 0, y: 30.000002, z: 50}
+        value: {x: 0.13146959, y: 0, z: 0.065734796}
+        length: 0.16433707
+        modified: 1
+    - boneName: char_astrella_Spine
+      humanName: Spine
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.14218299, y: 0, z: 0.071091495}
+        length: 0.17772882
+        modified: 1
+    - boneName: char_astrella_Spine2
+      humanName: Chest
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.23539962, y: 0, z: 0.11769981}
+        length: 0.2942496
+        modified: 1
+    - boneName: char_astrella_Neck
+      humanName: Neck
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.06507087, y: 0, z: 0.032535434}
+        length: 0.08133862
+        modified: 1
+    - boneName: char_astrella_Head
+      humanName: Head
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 0.06507087, y: 0, z: 0.032535434}
+        length: 0.08133862
+        modified: 1
+    - boneName: char_astrella_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: -15.000001, z: -15.000001}
+        max: {x: 0, y: 15.000001, z: 30.000002}
+        value: {x: 0.05605509, y: 0, z: 0.028027546}
+        length: 0.07006888
+        modified: 1
+    - boneName: char_astrella_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: -15.000001, z: -15.000001}
+        max: {x: 0, y: 15.000001, z: 30.000002}
+        value: {x: 0.05605509, y: 0, z: 0.028027546}
+        length: 0.07006888
+        modified: 1
+    - boneName: char_astrella_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60.000004}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0.21905154, y: 0, z: 0.10952577}
+        length: 0.2738145
+        modified: 1
+    - boneName: char_astrella_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60.000004}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0.21905562, y: 0, z: 0.10952781}
+        length: 0.2738196
+        modified: 1
+    - boneName: char_astrella_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.21753447, y: 0, z: 0.108767234}
+        length: 0.27191815
+        modified: 1
+    - boneName: char_astrella_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0.21753892, y: 0, z: 0.10876946}
+        length: 0.27192372
+        modified: 1
+    - boneName: char_astrella_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 0.108767234, y: 0, z: 0.054383617}
+        length: 0.13595907
+        modified: 1
+    - boneName: char_astrella_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 0.10876946, y: 0, z: 0.05438473}
+        length: 0.13596186
+        modified: 1
+    - boneName: char_astrella_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: -50}
+        max: {x: 0, y: 0, z: 50}
+        value: {x: 0.06997082, y: 0, z: 0.03498541}
+        length: 0.08746356
+        modified: 1
+    - boneName: char_astrella_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: -50}
+        max: {x: 0, y: 0, z: 50}
+        value: {x: 0.06997081, y: 0, z: 0.034985404}
+        length: 0.08746354
+        modified: 1
+    - boneName: char_astrella_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: -25, z: -20}
+        max: {x: 0, y: 25, z: 20}
+        value: {x: 0.027973242, y: 0, z: 0.013986621}
+        length: 0.034966562
+        modified: 1
+    - boneName: char_astrella_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: 0.015596403, y: 0, z: 0.0077982014}
+        length: 0.019495508
+        modified: 1
+    - boneName: char_astrella_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: 0.011697301, y: 0, z: 0.0058486504}
+        length: 0.01462163
+        modified: 1
+    - boneName: char_astrella_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: 0.024839168, y: 0, z: 0.012419584}
+        length: 0.031048968
+        modified: 1
+    - boneName: char_astrella_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.017734505, y: 0, z: 0.008867253}
+        length: 0.02216814
+        modified: 1
+    - boneName: char_astrella_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.01330088, y: 0, z: 0.00665044}
+        length: 0.016626105
+        modified: 1
+    - boneName: char_astrella_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: -7.5000005, z: -50}
+        max: {x: 0, y: 7.5000005, z: 50}
+        value: {x: 0.03152625, y: 0, z: 0.015763124}
+        length: 0.03940783
+        modified: 1
+    - boneName: char_astrella_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.019510312, y: 0, z: 0.009755156}
+        length: 0.024387898
+        modified: 1
+    - boneName: char_astrella_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.014632735, y: 0, z: 0.0073163677}
+        length: 0.018290924
+        modified: 1
+    - boneName: char_astrella_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: -7.5000005, z: -50}
+        max: {x: 0, y: 7.5000005, z: 50}
+        value: {x: 0.027096175, y: 0, z: 0.013548087}
+        length: 0.033870228
+        modified: 1
+    - boneName: char_astrella_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.017656555, y: 0, z: 0.008828278}
+        length: 0.022070704
+        modified: 1
+    - boneName: char_astrella_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.013242419, y: 0, z: 0.0066212094}
+        length: 0.016553028
+        modified: 1
+    - boneName: char_astrella_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: 0.023012575, y: 0, z: 0.011506287}
+        length: 0.028765727
+        modified: 1
+    - boneName: char_astrella_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.013396656, y: 0, z: 0.006698328}
+        length: 0.016745824
+        modified: 1
+    - boneName: char_astrella_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.010047491, y: 0, z: 0.0050237454}
+        length: 0.012559368
+        modified: 1
+    - boneName: char_astrella_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: -25, z: -20}
+        max: {x: 0, y: 25, z: 20}
+        value: {x: 0.02797166, y: 0, z: 0.01398583}
+        length: 0.034964584
+        modified: 1
+    - boneName: char_astrella_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: 0.0155959185, y: 0, z: 0.0077979593}
+        length: 0.019494902
+        modified: 1
+    - boneName: char_astrella_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: 0.0116969375, y: 0, z: 0.0058484687}
+        length: 0.014621177
+        modified: 1
+    - boneName: char_astrella_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: 0.024839235, y: 0, z: 0.012419618}
+        length: 0.031049052
+        modified: 1
+    - boneName: char_astrella_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.017734136, y: 0, z: 0.008867068}
+        length: 0.022167679
+        modified: 1
+    - boneName: char_astrella_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.013300603, y: 0, z: 0.0066503016}
+        length: 0.016625758
+        modified: 1
+    - boneName: char_astrella_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: -7.5000005, z: -50}
+        max: {x: 0, y: 7.5000005, z: 50}
+        value: {x: 0.031526282, y: 0, z: 0.015763141}
+        length: 0.03940787
+        modified: 1
+    - boneName: char_astrella_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.019509263, y: 0, z: 0.009754632}
+        length: 0.024386588
+        modified: 1
+    - boneName: char_astrella_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.01463195, y: 0, z: 0.007315975}
+        length: 0.018289942
+        modified: 1
+    - boneName: char_astrella_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: -7.5000005, z: -50}
+        max: {x: 0, y: 7.5000005, z: 50}
+        value: {x: 0.02709689, y: 0, z: 0.013548445}
+        length: 0.03387112
+        modified: 1
+    - boneName: char_astrella_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.017656159, y: 0, z: 0.008828079}
+        length: 0.022070207
+        modified: 1
+    - boneName: char_astrella_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.013242121, y: 0, z: 0.0066210604}
+        length: 0.016552655
+        modified: 1
+    - boneName: char_astrella_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: 0.023012659, y: 0, z: 0.011506329}
+        length: 0.028765833
+        modified: 1
+    - boneName: char_astrella_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.013397173, y: 0, z: 0.0066985865}
+        length: 0.01674647
+        modified: 1
+    - boneName: char_astrella_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0.010047879, y: 0, z: 0.0050239395}
+        length: 0.0125598535
+        modified: 1
+    skeleton:
+    - name: char_astrella
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_skeleton
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 0.99999994}
+      scale: {x: 1.2000183, y: 1.2000183, z: 1.2000183}
+    - name: char_astrella_Hips1
+      parentName: 
+      position: {x: -1.2126404e-13, y: 0.95292073, z: 0.044094108}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftUpLeg
+      parentName: 
+      position: {x: -0.11947746, y: -0.097759426, z: 0}
+      rotation: {x: 0.033493415, y: 0.0000007872824, z: 0.000000040480625, w: 0.9994389}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999996}
+    - name: char_astrella_LeftLeg
+      parentName: 
+      position: {x: 0.0000003383055, y: -0.4039079, z: -0.0000073552724}
+      rotation: {x: 0.02031209, y: -0.0000008052836, z: 0.000000016360369, w: 0.99979365}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftFoot
+      parentName: 
+      position: {x: -0.0000002557331, y: -0.31705084, z: -0.0000012822572}
+      rotation: {x: -0.05378857, y: 0, z: -0, w: 0.9985523}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftToeBase
+      parentName: 
+      position: {x: 0.0000000014237989, y: -0.0974241, z: 0.108432494}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightUpLeg
+      parentName: 
+      position: {x: 0.11947996, y: -0.097759426, z: 0}
+      rotation: {x: 0.033455994, y: -0.00000076848863, z: -0.00000066771327, w: 0.99944013}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999996}
+    - name: char_astrella_RightLeg
+      parentName: 
+      position: {x: 0.000000073271266, y: -0.4039078, z: -0.000003293739}
+      rotation: {x: 0.02039708, y: 0.000000024853492, z: 0.0000012182292, w: 0.9997919}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightFoot
+      parentName: 
+      position: {x: -0.000000020353696, y: -0.31705087, z: -0.0000014724961}
+      rotation: {x: -0.053836074, y: 0.0000007978665, z: -0.0000005664781, w: 0.99854976}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightToeBase
+      parentName: 
+      position: {x: -1.806555e-14, y: -0.097423874, z: 0.10843265}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_Spine
+      parentName: 
+      position: {x: -1.6155871e-29, y: 0.07229633, z: 0}
+      rotation: {x: -0.043619383, y: 0, z: -0, w: 0.9990482}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_Spine1
+      parentName: 
+      position: {x: -0, y: 0.06824573, z: -0.0000000053892433}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_Spine2
+      parentName: 
+      position: {x: -0, y: 0.07985947, z: -0.000000013731541}
+      rotation: {x: 0.043619383, y: 0, z: -0, w: 0.9990482}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftShoulder
+      parentName: 
+      position: {x: -0.11800999, y: 0.14419606, z: -0.043447256}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftArm
+      parentName: 
+      position: {x: -0.058389936, y: 0, z: -0.0000003993451}
+      rotation: {x: 0.000112265494, y: -0.00034330087, z: -0.00021246105, w: 0.9999999}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999998}
+    - name: char_astrella_LeftForeArm
+      parentName: 
+      position: {x: -0.22817558, y: -0.000005039782, z: 0.000008171148}
+      rotation: {x: -0.00011274215, y: 0.0003617383, z: 0.00021270498, w: 0.9999999}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftHand
+      parentName: 
+      position: {x: -0.22659542, y: -0.000000015752558, z: -0.0000004482666}
+      rotation: {x: 0, y: -0.000018437448, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftHandIndex1
+      parentName: 
+      position: {x: -0.07939505, y: 0.0046799374, z: 0.030820109}
+      rotation: {x: -0.0020094363, y: 0.065337405, z: 0.030682059, w: 0.9973894}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: char_astrella_LeftHandIndex2
+      parentName: 
+      position: {x: -0.025873799, y: 0.00000007571782, z: 0.0000000044946047}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: char_astrella_LeftHandIndex3
+      parentName: 
+      position: {x: -0.018473206, y: -0.000000038322362, z: -0.000000008406546}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: char_astrella_LeftHandIndex4
+      parentName: 
+      position: {x: -0.01761396, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_LeftHandMiddle1
+      parentName: 
+      position: {x: -0.07881306, y: 0.0062199268, z: 0.009550376}
+      rotation: {x: 0.00029256003, y: 0.0019006314, z: 0.018199582, w: 0.9998325}
+      scale: {x: 0.9999997, y: 0.99999976, z: 0.9999997}
+    - name: char_astrella_LeftHandMiddle2
+      parentName: 
+      position: {x: -0.03283941, y: 0.000000106952015, z: -0.0000000042251096}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.9999997, y: 0.99999976, z: 0.9999997}
+    - name: char_astrella_LeftHandMiddle3
+      parentName: 
+      position: {x: -0.02032296, y: -0.00000004219416, z: 3.599608e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.9999997, y: 0.99999976, z: 0.9999997}
+    - name: char_astrella_LeftHandMiddle4
+      parentName: 
+      position: {x: -0.018039273, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_LeftHandPinky1
+      parentName: 
+      position: {x: -0.07062011, y: -0.0038100004, z: -0.028701708}
+      rotation: {x: 0.010442825, y: -0.0071663605, z: -0.00410182, w: 0.99991137}
+      scale: {x: 0.99999976, y: 0.99999964, z: 0.9999997}
+    - name: char_astrella_LeftHandPinky2
+      parentName: 
+      position: {x: -0.023971137, y: -0.000000013914613, z: -0.0000000048731548}
+      rotation: {x: 0, y: 0, z: 0.0000037638636, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999976}
+    - name: char_astrella_LeftHandPinky3
+      parentName: 
+      position: {x: -0.013954644, y: -0.000000011913362, z: -0.00000002121396}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999976}
+    - name: char_astrella_LeftHandPinky4
+      parentName: 
+      position: {x: -0.011425022, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_LeftHandRing1
+      parentName: 
+      position: {x: -0.07708007, y: 0.0030799897, z: -0.012365999}
+      rotation: {x: 0.0033251345, y: -0.0020408367, z: 0.009986741, w: 0.9999425}
+      scale: {x: 0.99999976, y: 0.9999997, z: 0.9999997}
+    - name: char_astrella_LeftHandRing2
+      parentName: 
+      position: {x: -0.028224802, y: -0.000000015090633, z: 0.0000000059591336}
+      rotation: {x: 0, y: 0, z: 0.0000037514728, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999976}
+    - name: char_astrella_LeftHandRing3
+      parentName: 
+      position: {x: -0.018392019, y: 0.000000068897585, z: -0.0000000137306175}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999976}
+    - name: char_astrella_LeftHandRing4
+      parentName: 
+      position: {x: -0.01485655, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_LeftHandThumb1
+      parentName: 
+      position: {x: -0.020382004, y: -0.0049600694, z: 0.0323438}
+      rotation: {x: -0.08177553, y: 0.06741236, z: -0.06836905, w: 0.99201506}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftHandThumb2
+      parentName: 
+      position: {x: -0.021632062, y: -0.008339954, z: 0.017650684}
+      rotation: {x: 0.000000750652, y: 0.30305946, z: 0.14319652, w: 0.9421516}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftHandThumb3
+      parentName: 
+      position: {x: -0.016246041, y: 0.00000000798765, z: -1.0080425e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_LeftHandThumb4
+      parentName: 
+      position: {x: -0.018413, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_Neck
+      parentName: 
+      position: {x: -0, y: 0.24429983, z: -0.021043321}
+      rotation: {x: 0.087155186, y: 0, z: -0, w: 0.9961947}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: char_astrella_Head
+      parentName: 
+      position: {x: -0, y: 0.0677812, z: 0.000000009182848}
+      rotation: {x: -0.043618828, y: 0, z: -0, w: 0.99904823}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightShoulder
+      parentName: 
+      position: {x: 0.11800999, y: 0.14419708, z: -0.04344724}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightArm
+      parentName: 
+      position: {x: 0.058389936, y: 0.0000038146397, z: 0.00000033974138}
+      rotation: {x: 0.00011291369, y: 0.00034584152, z: 0.00021496441, w: 0.9999999}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999998}
+    - name: char_astrella_RightForeArm
+      parentName: 
+      position: {x: 0.22817981, y: -0.0000051669767, z: 0.000008290283}
+      rotation: {x: -0.000112600486, y: -0.0003639969, z: -0.00021518288, w: 0.9999999}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightHand
+      parentName: 
+      position: {x: 0.2266001, y: 0.00000009998125, z: -0.00000048047445}
+      rotation: {x: 0, y: 0.000018155224, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightHandIndex1
+      parentName: 
+      position: {x: 0.07939505, y: 0.004672734, z: 0.03082011}
+      rotation: {x: 0.0019963898, y: -0.06546291, z: -0.030416882, w: 0.99738926}
+      scale: {x: 0.9999997, y: 0.99999976, z: 0.99999964}
+    - name: char_astrella_RightHandIndex2
+      parentName: 
+      position: {x: 0.025873885, y: -0.00000004497876, z: -0.0000000014390211}
+      rotation: {x: 0, y: 0, z: -0.00000212918, w: 0.99999994}
+      scale: {x: 0.9999998, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightHandIndex3
+      parentName: 
+      position: {x: 0.018472845, y: -0.00000007205653, z: 8.845456e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.9999998, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightHandIndex4
+      parentName: 
+      position: {x: 0.017613752, y: -8.5265126e-16, z: -4.4408918e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_RightHandMiddle1
+      parentName: 
+      position: {x: 0.07881306, y: 0.0062110373, z: 0.009550407}
+      rotation: {x: 0.00029277478, y: -0.001878401, z: -0.018236686, w: 0.99983186}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+    - name: char_astrella_RightHandMiddle2
+      parentName: 
+      position: {x: 0.032839477, y: 0.000000037132743, z: 0.000000001927593}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: char_astrella_RightHandMiddle3
+      parentName: 
+      position: {x: 0.020321872, y: -0.000000092177956, z: 0.0000000022595215}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: char_astrella_RightHandMiddle4
+      parentName: 
+      position: {x: 0.018040188, y: -8.5265126e-16, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_RightHandPinky1
+      parentName: 
+      position: {x: 0.070619985, y: -0.0038132283, z: -0.028701663}
+      rotation: {x: -0.008051441, y: 0.0070981337, z: 0.004192508, w: 0.99993354}
+      scale: {x: 0.99999976, y: 0.9999997, z: 0.99999976}
+    - name: char_astrella_RightHandPinky2
+      parentName: 
+      position: {x: 0.023971219, y: 0.000000016716216, z: 0.000000001506139}
+      rotation: {x: 0, y: 0, z: -0.0000031559496, w: 0.99999994}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: char_astrella_RightHandPinky3
+      parentName: 
+      position: {x: 0.013955207, y: -0.00000001789616, z: -0.0000000032499317}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: char_astrella_RightHandPinky4
+      parentName: 
+      position: {x: 0.011424457, y: 2.842171e-16, z: -5.3290704e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_RightHandRing1
+      parentName: 
+      position: {x: 0.07708007, y: 0.0030792032, z: -0.012365976}
+      rotation: {x: -0.0064479145, y: 0.0021528266, z: -0.010008358, w: 0.99992675}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999976}
+    - name: char_astrella_RightHandRing2
+      parentName: 
+      position: {x: 0.028225536, y: -0.0000000030462322, z: 0.0000000024322477}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999976}
+    - name: char_astrella_RightHandRing3
+      parentName: 
+      position: {x: 0.018391574, y: -0.0000000036471972, z: -0.0000000040961914}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999976}
+    - name: char_astrella_RightHandRing4
+      parentName: 
+      position: {x: 0.014857123, y: 5.684342e-16, z: 4.4408918e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: char_astrella_RightHandThumb1
+      parentName: 
+      position: {x: 0.020382132, y: -0.0049684118, z: 0.032343876}
+      rotation: {x: -0.0816844, y: -0.06738865, z: 0.06829042, w: 0.9920296}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightHandThumb2
+      parentName: 
+      position: {x: 0.021632062, y: -0.008334205, z: 0.017650658}
+      rotation: {x: -0.0000020570144, y: -0.30306962, z: -0.14309858, w: 0.9421632}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightHandThumb3
+      parentName: 
+      position: {x: 0.016245535, y: 0.0000000071675563, z: -1.1801315e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999976}
+    - name: char_astrella_RightHandThumb4
+      parentName: 
+      position: {x: 0.018413467, y: 2.842171e-16, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
