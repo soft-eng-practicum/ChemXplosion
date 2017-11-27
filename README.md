@@ -4,12 +4,11 @@
 * Coming soon.
 
 ### Description
-* Coming soon.
+* This project is to design a 3D based learning module that will be both fun and educational for Chemistry students beginning to learn chemical reactions. 
 
 ### Documentation
 * [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements.docx) 
-* [Storyboard](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Story%20Board%20CHEM-XPLOSION.docx)
-* Diagrams coming soon
+* User Manual
 
 ### Team Info
 #### Fall 2017
