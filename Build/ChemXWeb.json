@@ -1,0 +1,11 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "ChemXWeb.data.unityweb",
+"asmCodeUrl": "ChemXWeb.asm.code.unityweb",
+"asmMemoryUrl": "ChemXWeb.asm.memory.unityweb",
+"asmFrameworkUrl": "ChemXWeb.asm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
