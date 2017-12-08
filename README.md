@@ -19,3 +19,6 @@
 2. **Brendon Serrano** - UI/UX designer/Documentation lead/Programmer
 3. **Armando Gonzalez** - Database Manager/Tester/Programmer
 4. **Anjan(John) Panchatcharam** - Lead Programmer / UI/UX designer
+
+### ASSET LICENSING 
+all assets used in the game are licensed under https://unity3d.com/legal/as_terms 
