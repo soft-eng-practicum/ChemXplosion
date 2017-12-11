@@ -1,6 +1,5 @@
 # ChemXplosion
-
-![ChemXplosion Poster](https://imgur.com/v1VrfGN)
+<img src="https://imgur.com/v1VrfGN" atl="ChemXplosion_Poster" align="center">
 
 ### Table of Contents
 * [Description](https://github.com/soft-eng-practicum/tech-challenged#description)
