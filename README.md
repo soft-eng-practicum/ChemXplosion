@@ -15,6 +15,7 @@
 * [Licensing](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/License_Agreement.docx)
 * [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements_Version2.docx)
 * [User Manual](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
+* [Zenhub](https://app.zenhub.com/workspace/o/soft-eng-practicum/tech-challenged/boards?repos=101439795)
 
 ### Team Info
 #### Fall 2017
