@@ -11,6 +11,8 @@
 * This project is to design a 3D based learning module that will be both fun and educational for Chemistry students beginning to learn chemical reactions. This project was started in Fall 2017 in collobartion with GGC Professor [Thomas Gluick](http://www.ggc.edu/about-ggc/directory/thomas-gluick) as a way to provide an educational and entertaining game for Chemistry students.
 
 ### Documentation
+* [Developer Documentation](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
+* [Licensing](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/License_Agreement.docx)
 * [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements_Version2.docx) 
 * [Storyboard](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Story%20Board%20CHEM-XPLOSION.docx) 
 * [User Manual](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
