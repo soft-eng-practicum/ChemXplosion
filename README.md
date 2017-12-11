@@ -13,7 +13,7 @@
 ### Documentation
 * [Developer Documentation](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
 * [Licensing](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/License_Agreement.docx)
-* [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements_Version2.docx) 
+* [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements_Version2.docx)
 * [User Manual](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
 
 ### Team Info
