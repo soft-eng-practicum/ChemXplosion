@@ -27,5 +27,12 @@
 3. **Armando Gonzalez** - Database Manager | Testing Lead | Programmer
 4. **Anjan(John) Panchatcharam** - Lead Programmer | UI/UX designer | Tester
 
+#### Spring 2018
+* Team Name: ChemJam
+* Repository Location: https://github.com/soft-eng-practicum/ChemXplosion
+* Communication: Software Development II Slack (#team_chemjam)
+1. **Hieu Dinh** - Lead Programmer | Organizer |
+2. **Evan Lamkie** - UI/UX Design
+
 ### ASSET LICENSING 
 All assets used in the game are licensed under https://unity3d.com/legal/as_terms 
