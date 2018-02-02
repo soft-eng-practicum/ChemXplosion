@@ -34,6 +34,7 @@
 1. **Hieu Dinh** - Lead Programmer | Organizer |
 2. **Evan Lamkie** - UI/UX Design
 3. **Michael Lopez** - | Sound Engineer | Data Modeler | Documentations Lead |
+4. **Alex Croghan** - | Testing Lead | Programmer
 
 ### ASSET LICENSING 
 All assets used in the game are licensed under https://unity3d.com/legal/as_terms 
