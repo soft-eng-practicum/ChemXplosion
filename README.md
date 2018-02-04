@@ -23,6 +23,7 @@
 * Team Name: ChemJam
 * Repository Location: https://github.com/soft-eng-practicum/ChemXplosion
 * Communication: Software Development II Slack (#team_chemjam)
+* Progress Tracking: https://trello.com/b/G88KTFcW/chemjam
 1. **Hieu Dinh** - Lead Programmer | Organizer |
 2. **Evan Lamkie** - UI/UX Design
 3. **Michael Lopez** - | Sound Engineer | Data Modeler | Documentations Lead |
@@ -33,7 +34,6 @@
 * Team Name: Technically Challenged (or Tech_Challenged)
 * Repository Location: https://github.com/soft-eng-practicum/tech-challenged
 * Communication: Software Development II Discord (#tech_challenged channel)
-* Progress Tracking: https://trello.com/b/G88KTFcW/chemjam
 1. **Eric Jenkins** - Team Manager| Client Liason | UI/UX Lead Designer
 2. **Brendon Serrano** - Documentation Lead | UI/UX designer | Programmer
 3. **Armando Gonzalez** - Database Manager | Testing Lead | Programmer
