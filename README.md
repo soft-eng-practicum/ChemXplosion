@@ -18,14 +18,6 @@
 * [Zenhub](https://app.zenhub.com/workspace/o/soft-eng-practicum/tech-challenged/boards?repos=101439795)
 
 ### Team Info
-#### Fall 2017
-* Team Name: Technically Challenged (or Tech_Challenged)
-* Repository Location: https://github.com/soft-eng-practicum/tech-challenged
-* Communication: Software Development II Discord (#tech_challenged channel)
-1. **Eric Jenkins** - Team Manager| Client Liason | UI/UX Lead Designer
-2. **Brendon Serrano** - Documentation Lead | UI/UX designer | Programmer
-3. **Armando Gonzalez** - Database Manager | Testing Lead | Programmer
-4. **Anjan(John) Panchatcharam** - Lead Programmer | UI/UX designer | Tester
 
 #### Spring 2018
 * Team Name: ChemJam
@@ -35,6 +27,17 @@
 2. **Evan Lamkie** - UI/UX Design
 3. **Michael Lopez** - | Sound Engineer | Data Modeler | Documentations Lead |
 4. **Alex Croghan** - | Testing Lead | Programmer
+5. **Rae Vroman** - |Team manager| Client Liaison 
+
+#### Fall 2017:poop:
+* Team Name: Technically Challenged (or Tech_Challenged)
+* Repository Location: https://github.com/soft-eng-practicum/tech-challenged
+* Communication: Software Development II Discord (#tech_challenged channel)
+* Progress Tracking: https://trello.com/b/G88KTFcW/chemjam
+1. **Eric Jenkins** - Team Manager| Client Liason | UI/UX Lead Designer
+2. **Brendon Serrano** - Documentation Lead | UI/UX designer | Programmer
+3. **Armando Gonzalez** - Database Manager | Testing Lead | Programmer
+4. **Anjan(John) Panchatcharam** - Lead Programmer | UI/UX designer | Tester
 
 ### ASSET LICENSING 
 All assets used in the game are licensed under https://unity3d.com/legal/as_terms 
