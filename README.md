@@ -26,7 +26,7 @@
 * Progress Tracking: https://trello.com/b/G88KTFcW/chemjam
 1. **Hieu Dinh** - Lead Programmer | Organizer |
 2. **Evan Lamkie** - UI/UX Design
-3. **Michael Lopez** - | Sound Engineer | Data Modeler | Documentations Lead |
+3. **Michael Lopez** - | Sound Engineer | Data Modeler | Documentations Lead | :stuck_out_tongue_winking_eye:
 4. **Alex Croghan** - | Testing Lead | Programmer
 5. **Rae Vroman** - |Team manager| Client Liaison 
 
