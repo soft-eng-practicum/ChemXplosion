@@ -21,7 +21,7 @@ public class timer : MonoBehaviour {
 
 	void Update() {
 
-		itemCounter = Onhit.counter;
+	//	itemCounter = Onhit.counter;
 
 		if (activeTimer == true) {
 			time += Time.deltaTime;
@@ -35,9 +35,9 @@ public class timer : MonoBehaviour {
 
 		myTimer.text = string.Format ("{0:00} : {1:00} : {2:00} ", minutes, seconds, fraction);
 
-		if (itemCounter == 2) {
-			stopTimer ();
-		}
+	//	if (itemCounter == 2) {
+	//		stopTimer ();
+	//	}
 
 		//*************** Timer Tester **********************
 

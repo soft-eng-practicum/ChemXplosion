@@ -8,7 +8,7 @@ public class Pickup : MonoBehaviour {
 	public GameObject loc;
 	bool isGrabbed = false;
 	GameObject player;
-	PlayerController playerController;
+	//PlayerController playerController;
 	private RaycastHit hit;
 	private GameObject hold;
 
@@ -24,7 +24,7 @@ public class Pickup : MonoBehaviour {
 			RaycastHit hit;
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			if (Physics.Raycast (ray, out hit, 2.5f)) {
-				if (hit.collider.gameObject.tag == "Pickupable"){
+				if (hit.collider.gameObject.tag == "Pickupable" || hit.collider.gameObject.tag == "Deny" || hit.collider.gameObject.tag == "Accept"){
 					this.isGrabbed = true;
 					Grab (hit.collider.gameObject);
 					GetComponent<Rigidbody> ().isKinematic = true;
@@ -37,15 +37,15 @@ public class Pickup : MonoBehaviour {
 			GetComponent<Rigidbody> ().useGravity = true;
 			GetComponent<Rigidbody> ().isKinematic = false;
 			this.transform.parent = null;
-			playerController.isLooking = false;
+		//	playerController.isLooking = false;
 		} 
 
-		if (isGrabbed == true) {
-			playerController.isLooking = true;
-			float v = Input.GetAxisRaw ("Vertical");
-			float h = Input.GetAxisRaw ("Horizontal");
-			hold.transform.Rotate (v, 0, h);
-		}
+		//if (isGrabbed == true) {
+		//	playerController.isLooking = true;
+		//	float v = Input.GetAxisRaw ("Vertical");
+		//	float h = Input.GetAxisRaw ("Horizontal");
+		//	hold.transform.Rotate (v, 0, h);
+		//}
 
 	}
 

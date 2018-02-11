@@ -8,6 +8,9 @@ TagManager:
   - Pickupable
   - Door
   - Test
+  - Wrong
+  - Accept
+  - Deny
   layers:
   - Default
   - TransparentFX
