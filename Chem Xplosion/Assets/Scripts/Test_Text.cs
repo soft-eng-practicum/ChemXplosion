@@ -13,6 +13,8 @@ public class Test_Text : MonoBehaviour {
 
 	public static int chestCounter;
 
+	public static bool test;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -20,13 +22,15 @@ public class Test_Text : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		itemCounter = Onhit.counter;
+		itemCounter = PuzzleOneTable.puzzleOneCounter;
 
 		tempTimer = timer.toggleTimer;
 
-		chestCounter = DoorOpener.dCounter;
+		chestCounter = ItemClear.ascounter;
+
+		test = ItemClear.okToClear;
 
 
-		myText.text = ("Item Count: " + itemCounter + " test chest counter: " + chestCounter);
+		myText.text = ("Item Count: " + itemCounter );
 	}
 }
