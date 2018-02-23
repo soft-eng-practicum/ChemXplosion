@@ -24,13 +24,13 @@
 * Repository Location: https://github.com/soft-eng-practicum/ChemXplosion
 * Communication: Software Development II Slack (#team_chemjam)
 * Progress Tracking: https://trello.com/b/G88KTFcW/chemjam
-1. **Hieu Dinh** - Lead Programmer | Organizer |
+1. **Hieu Dinh** - Lead Programmer | Organizer |  Data Modeler |
 2. **Evan Lamkie** - UI/UX Design
-3. **Michael Lopez** - | Sound Engineer | Data Modeler | Documentations Lead | :stuck_out_tongue_winking_eye:
+3. **Michael Lopez** - | Sound Engineer | Documentations Lead | :stuck_out_tongue_winking_eye:
 4. **Alex Croghan** - | Testing Lead | Programmer
 5. **Rae Vroman** - |Team manager| Client Liaison 
 
-#### Fall 2017:poop:
+#### Fall 2017
 * Team Name: Technically Challenged (or Tech_Challenged)
 * Repository Location: https://github.com/soft-eng-practicum/tech-challenged
 * Communication: Software Development II Discord (#tech_challenged channel)
