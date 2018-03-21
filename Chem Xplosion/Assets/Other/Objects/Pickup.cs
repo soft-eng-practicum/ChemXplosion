@@ -6,11 +6,12 @@ public class Pickup : MonoBehaviour {
 
 	Transform hands;
 	public GameObject loc;
-	bool isGrabbed = false;
+	public bool isGrabbed = false;
 	GameObject player;
 	//PlayerController playerController;
 	private RaycastHit hit;
 	private GameObject hold;
+    public static Pickup pickup; 
 
 	// Use this for initialization
 	void Start () {
