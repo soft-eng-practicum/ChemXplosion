@@ -11,7 +11,7 @@ public class Pickup : MonoBehaviour {
 	//PlayerController playerController;
 	private RaycastHit hit;
 	private GameObject hold;
-    public static Pickup pickup; 
+    public Pickup pickup; 
 
 	// Use this for initialization
 	void Start () {
