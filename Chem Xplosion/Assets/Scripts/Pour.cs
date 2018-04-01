@@ -2,36 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pour : MonoBehaviour
-{
+public class Pour : MonoBehaviour{
 
     private Animator animate;
-    public bool poured;
     public Pickup pickup;
     public bool isPoured; 
 
     // Use this for initialization
-    void Start()
-    {
-        poured = false;
-        isPoured = false;
+    void Start(){
+        this.isPoured = false;
         animate = GetComponent<Animator>();
-        pickup = GetComponent<Pickup>();
+        this.pickup = GetComponent<Pickup>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-        if (Input.GetButtonDown("e") && pickup.isGrabbed == true)
-        {
-            animate.SetBool("poured", true);
-            isPoured = true;
+    void Update(){
+        if (Input.GetButtonDown("e") && this.pickup.isGrabbed == true){
+            this.animate.SetBool("poured", true);
+            this.isPoured = true;
         }
-        if (Input.GetButtonUp("e"))
-        {
-            animate.SetBool("poured", false);
-            isPoured = false;
+        if (Input.GetButtonUp("e")){
+            this.animate.SetBool("poured", false);
+            this.isPoured = false;
         }
     }
 }

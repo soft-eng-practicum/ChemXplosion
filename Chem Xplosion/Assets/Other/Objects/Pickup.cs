@@ -8,10 +8,9 @@ public class Pickup : MonoBehaviour {
 	public GameObject loc;
 	public bool isGrabbed = false;
 	GameObject player;
-	//PlayerController playerController;
 	private RaycastHit hit;
 	private GameObject hold;
-    public static Pickup pickup; 
+  //  public static Pickup pickup; 
 
 	// Use this for initialization
 	void Start () {
@@ -38,16 +37,7 @@ public class Pickup : MonoBehaviour {
 			GetComponent<Rigidbody> ().useGravity = true;
 			GetComponent<Rigidbody> ().isKinematic = false;
 			this.transform.parent = null;
-		//	playerController.isLooking = false;
 		} 
-
-		//if (isGrabbed == true) {
-		//	playerController.isLooking = true;
-		//	float v = Input.GetAxisRaw ("Vertical");
-		//	float h = Input.GetAxisRaw ("Horizontal");
-		//	hold.transform.Rotate (v, 0, h);
-		//}
-
 	}
 
 	void Grab (GameObject o) {
