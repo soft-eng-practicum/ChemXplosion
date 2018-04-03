@@ -1,6 +1,11 @@
 fileFormatVersion: 2
-guid: 3f1ba10addb988a409eacc7f381c2685
-timeCreated: 1520377430
+<<<<<<< HEAD
+guid: 1531157d06463ae4bb9d4c1f29ac8950
+timeCreated: 1520794382
+=======
+guid: 56b4fc26623300b40b6433356d7094ae
+timeCreated: 1520808612
+>>>>>>> origin/Puzzle4
 licenseType: Free
 NativeFormatImporter:
   externalObjects: {}
