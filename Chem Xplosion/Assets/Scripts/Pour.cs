@@ -25,7 +25,8 @@ public class Pour : MonoBehaviour
 
         if (Input.GetButtonDown("e") && pickup.isGrabbed && collider.gameObject)
         {
-            animate.SetBool("poured", true);
+            //animate.SetBool("poured", true);
+            pickup.selected.GetComponent<Animator>().SetBool("poured", true);
             isPoured = true;
         }
         if (Input.GetButtonUp("e"))

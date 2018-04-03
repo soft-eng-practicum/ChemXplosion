@@ -11,10 +11,10 @@ public class Pickup : MonoBehaviour {
 	//PlayerController playerController;
 	private RaycastHit hit;
 	private GameObject hold;
-    public Pickup pickup; 
-
-	// Use this for initialization
-	void Start () {
+    public Pickup pickup;
+    public GameObject selected;
+    // Use this for initialization
+    void Start () {
 		hands = GameObject.Find ("PickupLoc").transform;
 		player = GameObject.Find ("Player");
 	}
@@ -29,7 +29,8 @@ public class Pickup : MonoBehaviour {
 					this.isGrabbed = true;
 					Grab (hit.collider.gameObject);
 					GetComponent<Rigidbody> ().isKinematic = true;
-				}
+                    selected = hit.collider.gameObject;
+                }
 			}
 
 
