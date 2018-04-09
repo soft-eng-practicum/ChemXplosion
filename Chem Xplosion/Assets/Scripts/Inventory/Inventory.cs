@@ -6,15 +6,17 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour {
 
     public Image[] itemImages = new Image[numItemSlots];
-    public Item[] items = new Item[numItemSlots];
+    public GameObject[] items = new GameObject[numItemSlots];
 
     public const int numItemSlots = 12;
 
-    public void AddItem(Item itemToAdd) {
+    public void AddItem(GameObject itemToAdd) {
         for (int i = 0; i < items.Length; i++) {
             if (items[i] == null) {
-                items[i] = itemToAdd;
-                itemImages[i].sprite = itemToAdd.sprite;
+                items[i] = GameObject.Find(itemToAdd.name);
+                itemToAdd.SetActive(false); // Hides item in game, does not destroy it
+                print(itemToAdd.name + " added to item slot " + i);
+                //itemImages[i].sprite = itemToAdd.sprite;
                 itemImages[i].enabled = true;
                 return;
             }

@@ -13,10 +13,12 @@ public class Pickup : MonoBehaviour {
 	private GameObject hold;
     public Pickup pickup;
     public GameObject selected;
+    Inventory inventory;
     // Use this for initialization
     void Start () {
 		hands = GameObject.Find ("PickupLoc").transform;
 		player = GameObject.Find ("Player");
+        inventory = GameObject.Find("InventoryCanvas").GetComponent<Inventory>();
 	}
 	
 	// Update is called once per frame
@@ -39,17 +41,27 @@ public class Pickup : MonoBehaviour {
 			GetComponent<Rigidbody> ().useGravity = true;
 			GetComponent<Rigidbody> ().isKinematic = false;
 			this.transform.parent = null;
-		//	playerController.isLooking = false;
-		} 
+            //	playerController.isLooking = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.Mouse1) && isGrabbed == true)
+        {
+            print("additem");
+            this.inventory.AddItem(selected);
+            //selected.SetActive(false);
+            isGrabbed = false;
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<Rigidbody>().isKinematic = false;
+            this.transform.parent = null;
+        }
 
-		//if (isGrabbed == true) {
-		//	playerController.isLooking = true;
-		//	float v = Input.GetAxisRaw ("Vertical");
-		//	float h = Input.GetAxisRaw ("Horizontal");
-		//	hold.transform.Rotate (v, 0, h);
-		//}
+        //if (isGrabbed == true) {
+        //	playerController.isLooking = true;
+        //	float v = Input.GetAxisRaw ("Vertical");
+        //	float h = Input.GetAxisRaw ("Horizontal");
+        //	hold.transform.Rotate (v, 0, h);
+        //}
 
-	}
+    }
 
 	void Grab (GameObject o) {
 		if (isGrabbed) {
