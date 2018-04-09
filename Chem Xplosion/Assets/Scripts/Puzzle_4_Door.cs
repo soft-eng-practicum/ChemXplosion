@@ -6,7 +6,7 @@ public class Puzzle_4_Door : MonoBehaviour
 {
 
     private Animator dAnimate;
-    public static bool puzzleFourComplete;
+    public static bool is_Complete_Puzzle_4;
     // Use this for initialization
     void Start()
     {
@@ -17,9 +17,9 @@ public class Puzzle_4_Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        puzzleFourComplete = PuzzleFourTable.isComplete_Puzzle_4;
+        is_Complete_Puzzle_4 = PuzzleFourTable.isComplete_Puzzle_4;
 
-        if (puzzleFourComplete == true)
+        if (is_Complete_Puzzle_4 == true)
         {
             dAnimate.SetBool("open", true);
         }

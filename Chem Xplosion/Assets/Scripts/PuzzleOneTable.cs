@@ -7,55 +7,61 @@ public class PuzzleOneTable : MonoBehaviour
 
     public static bool isComplete_Puzzle_1 = false;
     public static int puzzleOneCounter = 0;
-    public static bool onTable = false;
+    public Pour[] pours;
     public GameObject[] puzzleOneItems;
+    public GameObject explosion;
 
 
     void Start()
     {
-
-    }
-    void OnCollisionEnter(Collision col)
-    {
-        onTable = true;
-        if (col.gameObject.tag == "Accept")
+        pours = new Pour[puzzleOneItems.Length];
+        for (int i = 0; i < puzzleOneItems.Length; i++)
         {
-            puzzleOneCounter++;
-        }
-        if (col.gameObject.tag == "Deny")
-        {
-            puzzleOneCounter--;
-        }
-        if (col.gameObject.tag == "Test")
-        {
-            puzzleOneCounter++;
+            pours[i] = puzzleOneItems[i].GetComponent<Pour>();
         }
     }
-
-    void OnCollisionExit(Collision col)
+    private void OnTriggerStay(Collider other)
     {
-        onTable = false;
-        if (col.gameObject.tag == "Accept")
+        if (other.tag == "Accept")
         {
-            puzzleOneCounter--;
+            for (int i = 0; i < puzzleOneItems.Length; i++)
+            {
+                if (pours[i].isPoured)
+                {
+                    isComplete_Puzzle_1 = true;
+                }
+            }
         }
-        if (col.gameObject.tag == "Deny")
-        {
-            puzzleOneCounter++;
-        }
+        else if (other.tag == "Deny")
+            for (int i = 0; i < puzzleOneItems.Length; i++)
+            {
+                if (pours[i].isPoured)
+                {
+                    isComplete_Puzzle_1 = false;
+                    Invoke("Explosion", 4);
+                }
+            }
+    }
 
+    public void Explosion()
+    {
+        Instantiate(explosion, transform.position, transform.rotation);
+    }
+
+    void DestroyChems()
+    {
+        foreach (GameObject item in puzzleOneItems)
+        {
+            Destroy(item);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("e") && puzzleOneCounter == 1)
+        if (isComplete_Puzzle_1 == true)
         {
-            isComplete_Puzzle_1 = true;
-            foreach (GameObject item in puzzleOneItems)
-            {
-                Destroy(item);
-            }
+            Invoke("DestroyChems", 2);
         }
     }
 }

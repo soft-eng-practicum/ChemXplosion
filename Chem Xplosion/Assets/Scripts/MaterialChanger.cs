@@ -18,7 +18,7 @@ public class MaterialChanger : MonoBehaviour {
     void Update()
     {
 
-        if (PuzzleOneTable.puzzleOneCounter == 0 && PuzzleOneTable.onTable == false)
+        /*if (PuzzleOneTable.puzzleOneCounter == 0 && PuzzleOneTable.onTable == false)
         {
             rend.sharedMaterial = mats[0];
         }
@@ -29,7 +29,7 @@ public class MaterialChanger : MonoBehaviour {
         else
         {
             rend.sharedMaterial = mats[2];
-        }
+        }*/
 
     }
 }

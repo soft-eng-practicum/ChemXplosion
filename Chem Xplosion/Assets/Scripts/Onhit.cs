@@ -13,7 +13,7 @@ public class Onhit : MonoBehaviour {
 	void Update () {
 		isComplete_Puzzle_1 = PuzzleOneTable.isComplete_Puzzle_1;
 		if (isComplete_Puzzle_1 == true) {
-			destroyLock ();
+            Invoke("destroyLock", 1);
 		}
 	}
 		//void OnCollisionEnter(Collision col)
