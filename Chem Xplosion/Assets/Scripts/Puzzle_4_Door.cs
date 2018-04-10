@@ -7,10 +7,15 @@ public class Puzzle_4_Door : MonoBehaviour
 
     private Animator dAnimate;
     public static bool puzzleFourComplete;
+    private bool playAudio;
+    AudioSource audiosrc;
+    public AudioClip DoorOpen;
     // Use this for initialization
     void Start()
     {
         dAnimate = GetComponent<Animator>();
+        audiosrc = GetComponent<AudioSource>();
+        playAudio = false;
     }
 
 
@@ -22,6 +27,12 @@ public class Puzzle_4_Door : MonoBehaviour
         if (puzzleFourComplete == true)
         {
             dAnimate.SetBool("open", true);
+
+            if (!playAudio)
+            {
+                audiosrc.PlayOneShot(DoorOpen);
+                playAudio = true;
+            }
         }
     }
 }
