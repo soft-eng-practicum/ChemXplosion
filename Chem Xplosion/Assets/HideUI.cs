@@ -11,7 +11,7 @@ public class HideUI : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        visible = true;
+        visible = false;
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
