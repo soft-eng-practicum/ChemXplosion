@@ -8,9 +8,14 @@ public class Puzzle3 : MonoBehaviour {
     public GameObject[] puzzle3Objects;
     public Pour[] pours;
     public GameObject explosion;
+    public CanvasGroup canvasGroup;
+    bool visible;
+    bool inside = false;
 
     private void Start()
     {
+        visible = false;
+
         pours = new Pour[puzzle3Objects.Length];
         for (int i = 0; i < puzzle3Objects.Length; i++)
         {
@@ -21,6 +26,32 @@ public class Puzzle3 : MonoBehaviour {
 
     private void Update()
     {
+        if (inside && Input.GetKeyDown("p"))
+        {
+            if (visible)
+            {
+                Hide();
+            }
+            else if (!visible)
+            {
+                Show();
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            inside = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            inside = false;
+        }
 
     }
 
@@ -45,6 +76,20 @@ public class Puzzle3 : MonoBehaviour {
                     Invoke("Explosion", 4);
                 }
             }
+    }
+
+    void Hide()
+    {
+        canvasGroup.alpha = 0f; //this makes everything transparent
+        canvasGroup.blocksRaycasts = false; //this prevents the UI element to receive input events
+        visible = false;
+    }
+
+    void Show()
+    {
+        canvasGroup.alpha = 1f;
+        canvasGroup.blocksRaycasts = true;
+        visible = true;
     }
 
     public void Explosion()

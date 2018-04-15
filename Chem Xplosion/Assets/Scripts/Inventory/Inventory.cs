@@ -18,6 +18,7 @@ public class Inventory : MonoBehaviour {
                 print(itemToAdd.name + " added to item slot " + i);
                 //itemImages[i].sprite = itemToAdd.sprite;
                 itemImages[i].enabled = true;
+                itemImages[i].sprite = items[i].GetComponent<InventoryItem>().chemSprite;
                 return;
             }
         }

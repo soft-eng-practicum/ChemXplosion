@@ -90,6 +90,7 @@ public class PuzzleOneTable : MonoBehaviour
         if (other.tag == "Player")
         {
             inside = false;
+            Hide();
         }
 
     }
@@ -100,13 +101,15 @@ public class PuzzleOneTable : MonoBehaviour
         canvasGroup.alpha = 0f; //this makes everything transparent
         canvasGroup.blocksRaycasts = false; //this prevents the UI element to receive input events
         visible = false;
+        Cursor.visible = false;
     }
 
     //Show p2 canvas
     void Show()
     {
         canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
+       // canvasGroup.blocksRaycasts = true;
         visible = true;
+        Cursor.visible = true;
     }
 }

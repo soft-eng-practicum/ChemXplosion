@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4948271067888234}
   - component: {fileID: 33628766708511100}
   - component: {fileID: 23526391429856470}
-  - component: {fileID: 114776530510077290}
   - component: {fileID: 114814526299340828}
   m_Layer: 0
   m_Name: MinimapIcon
@@ -84,17 +83,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1681165798145586}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114776530510077290
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1681165798145586}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114814526299340828
 MonoBehaviour:
   m_ObjectHideFlags: 1
