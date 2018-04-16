@@ -11,6 +11,7 @@ public class Puzzle2 : MonoBehaviour {
 
     private void Start()
     {
+
         pours = new Pour[puzzle2Objects.Length];
         for (int i = 0; i < puzzle2Objects.Length; i++)
         {

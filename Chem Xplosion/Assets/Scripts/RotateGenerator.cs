@@ -11,7 +11,7 @@ public class RotateGenerator : MonoBehaviour {
     public GameObject gen4;
 
     private bool playAudio;
-    AudioSource audiosrc;
+    public AudioSource audiosrc;
     public AudioClip generatorNoise;
 
     // Use this for initialization
@@ -32,7 +32,7 @@ public class RotateGenerator : MonoBehaviour {
 
             if (!playAudio)
             {
-                audiosrc.PlayOneShot(generatorNoise);
+                audiosrc.enabled = true;
                 playAudio = true;
             }
         }

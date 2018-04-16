@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Puzzle_2_Door : MonoBehaviour {
 
-    private Animator dAnimate;
+    public Animator dAnimate;
     public static bool puzzleTwoComplete;
     // Use this for initialization
     void Start()

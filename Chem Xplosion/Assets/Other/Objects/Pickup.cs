@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour {
 
-	Transform hands;
+	public Transform hands;
 	public GameObject loc;
 	public bool isGrabbed = false;
 	GameObject player;
@@ -15,7 +15,8 @@ public class Pickup : MonoBehaviour {
     public GameObject selected;
     // Use this for initialization
     void Start () {
-		hands = GameObject.Find ("PickupLoc").transform;
+        if(hands == null)
+		    hands = GameObject.Find ("PickupLoc").transform;
 		player = GameObject.Find ("Player");
 	}
 	
@@ -51,10 +52,10 @@ public class Pickup : MonoBehaviour {
 
 	}
 
-	void Grab (GameObject o) {
+	public void Grab (GameObject o) {
 		if (isGrabbed) {
 			hold = o;
-			o.transform.parent = loc.transform;
+			//o.transform.parent = loc.transform;
 		o.GetComponent<Rigidbody> ().useGravity = false;
 		o.transform.position = hands.position;
 		}
