@@ -1,21 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class SlotController : MonoBehaviour {
+public class SlotController : MonoBehaviour, IDropHandler {
 
-   // public RectTransform rectT;
-    // Use this for initialization
-    void Start () {
+    public GameObject item{
+        get {
+            if (transform.childCount > 0) {
+                return transform.GetChild(0).gameObject;
+            }
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+            return null;
+        }
+}
 
-	}
-
-    void OnMouse() {
-       GetComponentInParent<InventoryController>().selectedSlot.GetComponent<RectTransform>().position = this.GetComponent<RectTransform>().position;
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (!item) {
+            DragDrop.itemBeingDragged.transform.SetParent(transform);
+            ExecuteEvents.ExecuteHierarchy<IHasChanged>(gameObject, null, (x, y) => x.HasChanged ());
+        }
     }
 }

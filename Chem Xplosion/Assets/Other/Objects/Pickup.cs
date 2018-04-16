@@ -37,7 +37,7 @@ public class Pickup : MonoBehaviour {
 
 
 		} else if (Input.GetButtonDown("Fire1") && isGrabbed == true) {
-			isGrabbed = false;
+			this.isGrabbed = false;
 			GetComponent<Rigidbody> ().useGravity = true;
 			GetComponent<Rigidbody> ().isKinematic = false;
 			this.transform.parent = null;
@@ -45,13 +45,14 @@ public class Pickup : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.Mouse1) && isGrabbed == true)
         {
-            print("additem");
-            this.inventory.AddItem(selected);
-            //selected.SetActive(false);
             isGrabbed = false;
+            print("additem");
+            inventory.AddItem(selected);
             GetComponent<Rigidbody>().useGravity = true;
+            //  selected.SetActive(false);
             GetComponent<Rigidbody>().isKinematic = false;
-            this.transform.parent = null;
+            transform.parent = null;
+
         }
 
         //if (isGrabbed == true) {

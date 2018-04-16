@@ -1,25 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class InventoryController : MonoBehaviour {
+public class InventoryController : MonoBehaviour, IHasChanged {
 
-    public RectTransform selectedItem, selectedSlot, originalSlot;
-	// Use this for initialization
-	void Start () {
-       // selectedItem = GetComponentInChildren<Item>().rectT;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    [SerializeField]
+    Transform slots;
+    [SerializeField]
+    Text inventoryText;
 
-        if (Input.GetMouseButton(0))
-        {
-            selectedItem.position = Input.mousePosition;
+    private void Start()
+    {
+        HasChanged();   
+    }
+
+    public void HasChanged()
+    {
+        System.Text.StringBuilder builder = new System.Text.StringBuilder();
+        builder.Append("-");
+        foreach (Transform slotTransform in slots) {
+            GameObject item = slotTransform.GetComponent<SlotController>().item;
+            if (item) {
+                builder.Append(item.name);
+                builder.Append("-");
+            }
         }
-        else if (Input.GetMouseButtonUp(0)) {
-            selectedItem.localPosition = Vector3.zero;
-        }
+        inventoryText.text = builder.ToString();
+    }
 
-	}
+}
+
+namespace UnityEngine.EventSystems {
+    public interface IHasChanged : IEventSystemHandler {
+        void HasChanged();
+    }
 }

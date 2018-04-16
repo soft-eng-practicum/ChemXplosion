@@ -1,22 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour {
+public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public static GameObject itemBeingDragged;
+    Vector3 startPosition;
+    Transform startParent;
 
-    public void Drag()
+    public void OnBeginDrag(PointerEventData eventData)
     {
-        GameObject.Find("Image").transform.position = Input.mousePosition;
-        print("dragging");
+        itemBeingDragged = gameObject;
+        startPosition = transform.position;
+        startParent = transform.parent;
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        transform.position = Input.mousePosition;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        itemBeingDragged = null;
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        if (transform.parent == startParent) {
+            transform.position = startPosition;
+        }
+        
     }
 }

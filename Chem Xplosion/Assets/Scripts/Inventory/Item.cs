@@ -16,7 +16,7 @@ public class Item : MonoBehaviour {
 
     public void OnMouse()
     {
-        GetComponentInParent<InventoryController>().selectedItem.GetComponent<RectTransform>().position = this.GetComponent<RectTransform>().position;
+        //GetComponentInParent<InventoryController>().selectedItem.GetComponent<RectTransform>().position = this.GetComponent<RectTransform>().position;
         print("Inside");
     }
 }
