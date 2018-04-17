@@ -14,6 +14,7 @@ public class Pickup : MonoBehaviour {
     public Pickup pickup;
     public GameObject selected;
     Inventory inventory;
+
     // Use this for initialization
     void Start () {
 		hands = GameObject.Find ("PickupLoc").transform;
@@ -41,25 +42,18 @@ public class Pickup : MonoBehaviour {
 			GetComponent<Rigidbody> ().useGravity = true;
 			GetComponent<Rigidbody> ().isKinematic = false;
 			this.transform.parent = null;
-            //	playerController.isLooking = false;
-        }
-        else if (Input.GetKeyDown(KeyCode.Mouse1) && isGrabbed == true)
-        {
-            isGrabbed = false;
-            print("additem");
-            inventory.AddItem(selected);
-            GetComponent<Rigidbody>().useGravity = true;
-            //  selected.SetActive(false);
-            GetComponent<Rigidbody>().isKinematic = false;
-            transform.parent = null;
-
         }
 
-        //if (isGrabbed == true) {
-        //	playerController.isLooking = true;
-        //	float v = Input.GetAxisRaw ("Vertical");
-        //	float h = Input.GetAxisRaw ("Horizontal");
-        //	hold.transform.Rotate (v, 0, h);
+        //else if (Input.GetKeyDown(KeyCode.Mouse1) && isGrabbed == true)
+        //{
+        //    isGrabbed = false;
+        //    print("additem");
+        //    inventory.AddItem(selected);
+        //    GetComponent<Rigidbody>().useGravity = true;
+        //    //  selected.SetActive(false);
+        //    GetComponent<Rigidbody>().isKinematic = false;
+        //    transform.parent = null;
+
         //}
 
     }

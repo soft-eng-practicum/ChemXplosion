@@ -9,7 +9,6 @@ public class Inventory : MonoBehaviour
     public Image[] itemImages = new Image[numItemSlots];
     public GameObject[] items = new GameObject[numItemSlots];
 
-
     public const int numItemSlots = 12;
 
     public void AddItem(GameObject itemToAdd)
@@ -40,13 +39,13 @@ public class Inventory : MonoBehaviour
                 image.name = items[i].name;
                 break;
             }
-        
+           
         }
    
     }
 
 
-    public void RemoveItem(Item itemToRemove)
+    public void RemoveItem(GameObject itemToRemove)
     {
         for (int i = 0; i < items.Length; i++)
         {

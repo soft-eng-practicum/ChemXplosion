@@ -19,7 +19,7 @@ public class SlotController : MonoBehaviour, IDropHandler {
     {
         if (!item) {
             DragDrop.itemBeingDragged.transform.SetParent(transform);
-            ExecuteEvents.ExecuteHierarchy<IHasChanged>(gameObject, null, (x, y) => x.HasChanged ());
+    //        ExecuteEvents.ExecuteHierarchy<IHasChanged>(gameObject, null, (x, y) => x.HasChanged ());
         }
     }
 }
