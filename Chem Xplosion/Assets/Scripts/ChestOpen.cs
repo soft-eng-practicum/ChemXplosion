@@ -5,8 +5,10 @@ using UnityEngine;
 public class ChestOpen : MonoBehaviour {
 
 	private Animator dAnimate;
-	public static int counter = 0;
-	bool test = false;
+
+    [HideInInspector]
+    public bool withinArea = false;
+    public bool isOpen = false;
 	// Use this for initialization
 	void Start () {
 		dAnimate = GetComponent<Animator> ();
@@ -14,22 +16,20 @@ public class ChestOpen : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col){
 		if (col.tag == "Player") {
-			test = true;
-			counter++;
+            withinArea = true;
 		}
 	}
 
 	void OnTriggerExit(Collider col){
 		if (col.tag == "Player") {
-			test = false;
-			counter--;
+            withinArea = false;
 		}
 	}
 
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetButtonDown("e") && test == true){
-			dAnimate.SetBool ("open", true);
-		}
-	}
+    public void ActiveAnimation() {
+        if (withinArea == true) {
+            dAnimate.SetBool("open", true);
+            isOpen = true;
+        }
+    }
 }

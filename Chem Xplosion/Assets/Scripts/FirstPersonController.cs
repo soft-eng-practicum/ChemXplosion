@@ -97,7 +97,77 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             m_MoveDir.y -= m_GravityMultiplier * Time.deltaTime;
             m_CharacterController.Move(m_MoveDir * Time.deltaTime);
+
+
+            CrossHair();
         }
+
+
+        /* Method: CrossHair()
+         * Author: Hieu Dinh
+         */
+        private void CrossHair() {
+            bool focus = false;
+            String interactText = "Press E To ";
+
+            //Check if ray hits an object within a distance of 2.5f
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 2.5f)) {
+
+                //Check if the object hitted is something that can be picked up
+                GameObject m_object = hit.transform.gameObject;
+
+                if (m_object.tag == "PickupAble")
+                {
+                    interactText += "Pickup ";
+                    //If the PickupAble object has script element, then display pickup text
+                    if (m_object.GetComponent<Element>() != null)
+                    {
+                        focus = true;
+                        ActionText.objectText = interactText + m_object.name;
+                    }
+                }
+
+                else if (m_object.tag == "OpenAble")
+                {
+                    interactText += "Open ";
+                    //If the OpenAble object is of type element, then display pickup text
+                    if (m_object.GetComponent<ChestOpen>() != null)
+                    {
+                        ChestOpen chestScript = m_object.GetComponent<ChestOpen>();
+                        focus = true;
+                        if (chestScript.withinArea == true && chestScript.isOpen == false) {
+                            ActionText.objectText = interactText + "Chest";
+                            if (Input.GetButtonDown("e"))
+                            {
+                                m_object.GetComponent<ChestOpen>().ActiveAnimation();
+                            }
+                        }                
+                    }
+                }
+
+                //Set focus to false if nothing notable is in sight
+                else {
+                    focus = false;
+                }
+            }
+
+            //Set action text to empty, once sight of picked up object exited.
+            if (focus == false) {
+                ActionText.objectText = "";
+            }
+        }
+
+
+        /* Method: Pickup()
+         * Author: Hieu Dinh
+         */
+        private void PickupObject(GameObject m_object) {
+
+
+        }
+
 
 
         private void PlayLandingSound()

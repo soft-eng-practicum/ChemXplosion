@@ -11,6 +11,8 @@ TagManager:
   - Wrong
   - Accept
   - Deny
+  - PickupAble
+  - OpenAble
   layers:
   - Default
   - TransparentFX
