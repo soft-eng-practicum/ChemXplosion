@@ -25,15 +25,16 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-       // Vector3[] worldCorners = new Vector3[4];
+        // Vector3[] worldCorners = new Vector3[4];
         //dropPanel.GetWorldCorners(worldCorners);
 
-       // if (Input.mousePosition.x >= worldCorners[0].x && Input.mousePosition.x < worldCorners[2].x && Input.mousePosition.y >= worldCorners[0].y && Input.mousePosition.y < worldCorners[2].y) {
-            if (transform.parent == startParent)
+        // if (Input.mousePosition.x >= worldCorners[0].x && Input.mousePosition.x < worldCorners[2].x && Input.mousePosition.y >= worldCorners[0].y && Input.mousePosition.y < worldCorners[2].y) {
+        itemBeingDragged = null;
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        if (transform.parent == startParent)
             {
                 transform.position = startPosition;
-            itemBeingDragged = null;
-            GetComponent<CanvasGroup>().blocksRaycasts = true;
+            
         }
        // }
 
