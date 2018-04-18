@@ -7,18 +7,10 @@ public class PuzzleOneTable : MonoBehaviour
 
     public static bool isComplete_Puzzle_1 = false;
     public static int puzzleOneCounter = 0;
-    public static bool onTable = false;
+    public Pour[] pours;
     public GameObject[] puzzleOneItems;
-    public CanvasGroup canvasGroup;
-    bool visible;
-    bool inside = false;
+    public GameObject explosion;
 
-
-    void Start()
-    {
-        visible = false;
-
-    }
     void OnCollisionEnter(Collision col)
     {
         onTable = true;
@@ -28,52 +20,53 @@ public class PuzzleOneTable : MonoBehaviour
         }
         if (col.gameObject.tag == "Deny")
         {
-            puzzleOneCounter--;
-        }
-        if (col.gameObject.tag == "Test")
-        {
-            puzzleOneCounter++;
+            pours[i] = puzzleOneItems[i].GetComponent<Pour>();
         }
     }
-
-    void OnCollisionExit(Collision col)
+    private void OnTriggerStay(Collider other)
     {
-        onTable = false;
-        if (col.gameObject.tag == "Accept")
+        if (other.tag == "Accept")
         {
-            puzzleOneCounter--;
+            for (int i = 0; i < puzzleOneItems.Length; i++)
+            {
+                if (pours[i].isPoured)
+                {
+                    isComplete_Puzzle_1 = true;
+                }
+            }
         }
-        if (col.gameObject.tag == "Deny")
-        {
-            puzzleOneCounter++;
-        }
+        else if (other.tag == "Deny")
+            for (int i = 0; i < puzzleOneItems.Length; i++)
+            {
+                if (pours[i].isPoured)
+                {
+                    isComplete_Puzzle_1 = false;
+                    Invoke("Explosion", 4);
+                }
+            }
+    }
 
+    public void Explosion()
+    {
+        Instantiate(explosion, transform.position, transform.rotation);
+    }
+
+    void DestroyChems()
+    {
+        foreach (GameObject item in puzzleOneItems)
+        {
+            Destroy(item);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        //check for "p" press, to trigger puzzle 
-        if (inside && Input.GetKeyDown("p"))
-        {
-            if (visible)
-            {
-                Hide();
-            }
-            else if (!visible)
-            {
-                Show();
-            }
-        }
 
         //press to solve puzzle
         if (Input.GetButtonDown("e") && puzzleOneCounter == 1)
         {
-            isComplete_Puzzle_1 = true;
-            foreach (GameObject item in puzzleOneItems)
-            {
-                Destroy(item);
-            }
+            Invoke("DestroyChems", 2);
         }
     }
 
@@ -95,21 +88,4 @@ public class PuzzleOneTable : MonoBehaviour
 
     }
 
-    //Hide p1 canvas
-    void Hide()
-    {
-        canvasGroup.alpha = 0f; //this makes everything transparent
-        canvasGroup.blocksRaycasts = false; //this prevents the UI element to receive input events
-        visible = false;
-        Cursor.visible = false;
-    }
-
-    //Show p2 canvas
-    void Show()
-    {
-        canvasGroup.alpha = 1f;
-       // canvasGroup.blocksRaycasts = true;
-        visible = true;
-        Cursor.visible = true;
-    }
 }
