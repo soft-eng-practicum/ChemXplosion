@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
             else
             {
                 items[i] = GameObject.Find(itemToAdd.name);
-                itemToAdd.SetActive(false); // Hides item in game, does not destroy it
+                itemToAdd.transform.position = new Vector3(-65.048f ,5.02f,15.314f); // Hides item in game, does not destroy it
                 print(itemToAdd.name + " added to item slot " + i);
                 //creating new game object, placing it in correct area, adding correct components needed for inventory item
                 GameObject image = new GameObject();
@@ -58,8 +58,7 @@ public class Inventory : MonoBehaviour
             {
                 //   GameObject initializeMe = new GameObject();
                 string item = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
-                GameObject.Find(item).SetActive(true);
-                GameObject.Find(item).transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+                GameObject.Find(item).transform.position = GameObject.FindGameObjectWithTag("Player").transform.position + transform.forward + transform.up;
                 //initializeMe.name = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
                 // GameObject.Find(itemToRemove.name.Remove(itemToRemove.name.Length - 1));
                 //initializeMe.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;

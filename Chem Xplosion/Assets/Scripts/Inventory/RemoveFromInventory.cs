@@ -3,27 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class RemoveFromInventory : MonoBehaviour
+public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     Inventory inventory;
-
 
     public void Start()
     {
         inventory = GameObject.Find("InventoryCanvas").GetComponent<Inventory>();
 
     }
-
-    public void Update()
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+        print("Hoovering" + gameObject.name);
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            print("Hoovering");
-            if (Input.GetKeyDown(KeyCode.Mouse1)) {
-                inventory.RemoveItem(this.gameObject);
-                print("removed" + gameObject.name);
-
-            }
+            print("tryinig");
+            inventory.RemoveItem(gameObject);
+            print("removed" + gameObject.name);
         }
+}
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        inventory.RemoveItem(gameObject);
+        print("removed" + gameObject.name);
     }
 }
