@@ -32,6 +32,7 @@ public class Inventory : MonoBehaviour
                 image.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 40);
                 image.AddComponent<CanvasGroup>();
                 image.AddComponent<DragDrop>();
+              //  image.GetComponent<DragDrop>().dropPanel = GameObject.Find("Puzzle 1 Slot Panel").GetComponent<RectTransform>();
                 itemImages[i].enabled = true;
                 itemImages[i].sprite = items[i].GetComponent<InventoryItem>().chemSprite;
                 image.transform.SetParent(GameObject.Find("Slot" + i).transform);
