@@ -32,12 +32,13 @@ public class Inventory : MonoBehaviour
                 image.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 40);
                 image.AddComponent<CanvasGroup>();
                 image.AddComponent<DragDrop>();
+                image.AddComponent<RemoveFromInventory>();
               //  image.GetComponent<DragDrop>().dropPanel = GameObject.Find("Puzzle 1 Slot Panel").GetComponent<RectTransform>();
                 itemImages[i].enabled = true;
                 itemImages[i].sprite = items[i].GetComponent<InventoryItem>().chemSprite;
                 image.transform.SetParent(GameObject.Find("Slot" + i).transform);
                 image.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
-                image.name = items[i].name;
+                image.name = items[i].name + "1";
                 break;
             }
            
@@ -50,11 +51,27 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < items.Length; i++)
         {
+            items[i] = GameObject.Find(itemToRemove.name);
+            print("found" + items[i].name);
+
             if (items[i] == itemToRemove)
             {
-                items[i] = null;
-                itemImages[i].sprite = null;
-                itemImages[i].enabled = false;
+                //   GameObject initializeMe = new GameObject();
+                string item = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
+                GameObject.Find(item).SetActive(true);
+                GameObject.Find(item).transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+                //initializeMe.name = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
+                // GameObject.Find(itemToRemove.name.Remove(itemToRemove.name.Length - 1));
+                //initializeMe.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+               // initializeMe.SetActive(true);
+
+                //itemToRemove.name = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
+                //itemToRemove = GameObject.Find(itemToRemove.name);
+                //itemToRemove.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+                //itemToRemove.SetActive(true); 
+                Destroy(itemImages[i]);
+               // itemToRemove.name = itemToRemove.name + "1";
+                Destroy(itemToRemove);
                 return;
             }
         }
