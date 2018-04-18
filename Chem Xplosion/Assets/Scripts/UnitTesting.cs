@@ -25,4 +25,24 @@ public class UnitTesting
         Assert.AreEqual(hands.transform.position.y, chemical.transform.position.y, .1f); //Test will pass if the chemical's location is the same as the player's hands
     }
 
+    [UnityTest]
+    public IEnumerator Puzzle3RotationTest() //Test if the Puzzle3 generator's fans rotate when puzzle 3 is solved  
+    {
+        GameObject generator = new GameObject(); //Generator parent GameObject
+        generator.AddComponent<RotateGenerator>(); // Add script to generator
+        generator.AddComponent<AudioSource>(); //Audio source to be tested
+        generator.GetComponent<AudioSource>().enabled = false; //Audio source will start disabled until solved
+        GameObject generatorFan1 = new GameObject(); //One of 4 generator fan GameObjects
+        GameObject generatorFan2 = new GameObject();//One of 4 generator fan GameObjects
+        GameObject generatorFan3 = new GameObject();//One of 4 generator fan GameObjects
+        GameObject generatorFan4 = new GameObject();//One of 4 generator fan GameObjects
+        generator.GetComponent<RotateGenerator>().gen1 = generatorFan1;
+        generator.GetComponent<RotateGenerator>().gen2 = generatorFan2;
+        generator.GetComponent<RotateGenerator>().gen3 = generatorFan3;
+        generator.GetComponent<RotateGenerator>().gen4 = generatorFan4;
+        Puzzle3.isComplete_Puzzle_3 = true; //Simulate puzzle being solved
+        yield return null; //Wait one frame
+        Assert.AreEqual(1, generator.GetComponent<RotateGenerator>().gen1.transform.eulerAngles.y); // Test will pass if the fans have begun to rotate around the y axis
+    }
+
 }
