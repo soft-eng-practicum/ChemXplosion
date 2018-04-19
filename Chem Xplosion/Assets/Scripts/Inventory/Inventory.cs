@@ -23,7 +23,8 @@ public class Inventory : MonoBehaviour
             else
             {
                 items[i] = GameObject.Find(itemToAdd.name);
-                itemToAdd.SetActive(false); // Hides item in game, does not destroy it
+                items[i].name = itemToAdd.name;
+                itemToAdd.transform.position = new Vector3(-65.048f, 5.02f, 15.314f); // Hides item in game, does not destroy it
                 print(itemToAdd.name + " added to item slot " + i);
                 //creating new game object, placing it in correct area, adding correct components needed for inventory item
                 GameObject image = new GameObject();
@@ -33,7 +34,7 @@ public class Inventory : MonoBehaviour
                 image.AddComponent<CanvasGroup>();
                 image.AddComponent<DragDrop>();
                 image.AddComponent<RemoveFromInventory>();
-              //  image.GetComponent<DragDrop>().dropPanel = GameObject.Find("Puzzle 1 Slot Panel").GetComponent<RectTransform>();
+                //  image.GetComponent<DragDrop>().dropPanel = GameObject.Find("Puzzle 1 Slot Panel").GetComponent<RectTransform>();
                 itemImages[i].enabled = true;
                 itemImages[i].sprite = items[i].GetComponent<InventoryItem>().chemSprite;
                 image.transform.SetParent(GameObject.Find("Slot" + i).transform);
@@ -49,31 +50,37 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(GameObject itemToRemove)
     {
+        string item = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject chemical = GameObject.Find(item);
         for (int i = 0; i < items.Length; i++)
         {
-            items[i] = GameObject.Find(itemToRemove.name);
-            print("found" + items[i].name);
-
-            if (items[i] == itemToRemove)
+            print("Item{i}: " + items[i]);
+            print("ItemToRemove: " + itemToRemove);
+            //print("sss " +items.Length);
+            //items[i] = GameObject.Find(itemToRemove.name);
+            //print("found" + items[i].name);
+            //print(items[i].name);
+            if (items[i] == chemical)
             {
-                //   GameObject initializeMe = new GameObject();
-                string item = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
-                GameObject.Find(item).SetActive(true);
-                GameObject.Find(item).transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+                //   GameObject initializeMe = new GameObject();    
+               // string item = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
+                GameObject.Find(item).transform.position = player.transform.position + player.transform.forward *.7f + Vector3.up;
                 //initializeMe.name = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
                 // GameObject.Find(itemToRemove.name.Remove(itemToRemove.name.Length - 1));
                 //initializeMe.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
-               // initializeMe.SetActive(true);
-
+                // initializeMe.SetActive(true);
                 //itemToRemove.name = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
                 //itemToRemove = GameObject.Find(itemToRemove.name);
                 //itemToRemove.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
-                //itemToRemove.SetActive(true); 
+                //itemToRemove.SetActive(true);   
                 Destroy(itemImages[i]);
-               // itemToRemove.name = itemToRemove.name + "1";
+                items[i] = null;
+                // itemToRemove.name = itemToRemove.name + "1";
                 Destroy(itemToRemove);
                 return;
             }
+       
         }
     }
 }
