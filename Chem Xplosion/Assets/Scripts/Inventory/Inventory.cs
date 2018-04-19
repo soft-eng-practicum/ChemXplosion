@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
 
     public Image[] itemImages = new Image[numItemSlots];
     public GameObject[] items = new GameObject[numItemSlots];
+    public Vector3 dropPoint;
 
     public const int numItemSlots = 12;
 
@@ -24,7 +25,7 @@ public class Inventory : MonoBehaviour
             {
                 items[i] = GameObject.Find(itemToAdd.name);
                 items[i].name = itemToAdd.name;
-                itemToAdd.transform.position = new Vector3(-65.048f, 5.02f, 15.314f); // Hides item in game, does not destroy it
+                itemToAdd.transform.position = new Vector3(-65, 15, 30); // Hides item in game, does not destroy it
                 print(itemToAdd.name + " added to item slot " + i);
                 //creating new game object, placing it in correct area, adding correct components needed for inventory item
                 GameObject image = new GameObject();
