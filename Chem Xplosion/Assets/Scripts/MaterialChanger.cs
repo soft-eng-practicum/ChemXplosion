@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaterialChanger : MonoBehaviour {
+public class MaterialChanger : MonoBehaviour
+{
     public Material[] mats;
 
-    public static int counter;
     Renderer rend;
     // Use this for initialization
     void Start()
@@ -18,19 +18,15 @@ public class MaterialChanger : MonoBehaviour {
     void Update()
     {
 
-        /*if (PuzzleOneTable.puzzleOneCounter == 0 && PuzzleOneTable.onTable == false)
+        if (PuzzleOneTable.isComplete_Puzzle_1)
         {
-            rend.sharedMaterial = mats[0];
+            Invoke("ChangeMaterial", 1.5f);
         }
-        else if (PuzzleOneTable.puzzleOneCounter == 1)
-        {
-            rend.sharedMaterial = mats[1];
-        }
-        else
-        {
-            rend.sharedMaterial = mats[2];
-        }*/
 
     }
-}
 
+    void ChangeMaterial()
+    {
+        rend.sharedMaterial = mats[1];
+    }
+}

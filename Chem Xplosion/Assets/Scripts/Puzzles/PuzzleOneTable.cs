@@ -18,9 +18,9 @@ public class PuzzleOneTable : MonoBehaviour
     {
         if (other.tag == "Accept" && Input.GetButtonDown("e"))
         {
-            Instantiate(flaskPrefab);
-            flaskPrefab.transform.position = new Vector3(1.863f,1.41967f,5.749f);
-            flaskPrefab.transform.Rotate(90,0,0);
+            Instantiate(flaskPrefab, new Vector3(1.863f, 1.41967f, 5.749f), Quaternion.identity);
+            //flaskPrefab.transform.position = new Vector3(1.863f,1.41967f,5.749f);
+            //flaskPrefab.transform.Rotate(0  ,0,0);
             flaskPrefab.GetComponent<Pour>().enabled = true;
             isComplete_Puzzle_1 = true;
             DestroyChems();
@@ -42,7 +42,8 @@ public class PuzzleOneTable : MonoBehaviour
     {
         foreach (GameObject item in puzzleOneItems)
         {
-            Destroy(item);
+            if (item != null)
+                Destroy(item);
         }
     }
 

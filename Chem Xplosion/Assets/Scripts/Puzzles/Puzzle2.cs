@@ -14,13 +14,13 @@ public class Puzzle2 : MonoBehaviour {
     {
         if (other.tag == "Accept" && Input.GetButtonDown("e"))
         {
-            Instantiate(flaskPrefab);
-            flaskPrefab.transform.position = new Vector3(1.863f, 1.41967f, 5.749f);
-            flaskPrefab.transform.Rotate(90, 0, 0);
+            Instantiate(flaskPrefab, new Vector3(-17.69f, 1.47f, 31.6f), Quaternion.identity);
+            //flaskPrefab.transform.position = new Vector3(-17.69f, 1.47f, 31.6f);
+            //flaskPrefab.transform.Rotate(90, 0, 0);
             flaskPrefab.GetComponent<Pour>().enabled = true;
             isComplete_Puzzle_2 = true;
             DestroyChems();
-            flaskPrefab.SetActive(false);
+            //flaskPrefab.SetActive(false);
 
         }
         else if (other.tag == "Deny" && Input.GetButtonDown("e"))
@@ -38,7 +38,8 @@ public class Puzzle2 : MonoBehaviour {
     {
         foreach (GameObject item in puzzle2Objects)
         {
-            Destroy(item);
+            if (item != null)
+                Destroy(item);
 
         }
     }

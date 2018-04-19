@@ -24,17 +24,21 @@ public class AddtoInventory : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 2.5f))
             {
-
+                
                 if (hit.collider.gameObject.tag == "Pickupable" || hit.collider.gameObject.tag == "Deny" || hit.collider.gameObject.tag == "Accept")
                 {
                     selected = GameObject.Find(hit.collider.name);
-                    print("additem");
-                    inventory.AddItem(selected);
-                    GetComponent<Rigidbody>().useGravity = true;
-                    //  selected.SetActive(false);
-                    GetComponent<Rigidbody>().isKinematic = false;
-                    transform.parent = null;
+                    if (!selected.GetComponent<Pickup>().isGrabbed)
+                    {
+                        print("additem");
+                        inventory.AddItem(selected);
+                        GetComponent<Rigidbody>().useGravity = true;
+                        //  selected.SetActive(false);
+                        GetComponent<Rigidbody>().isKinematic = false;
+                        transform.parent = null;
+                    }
                 }
+                    
             }
 
         }

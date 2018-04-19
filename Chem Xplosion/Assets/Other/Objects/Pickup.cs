@@ -37,12 +37,18 @@ public class Pickup : MonoBehaviour {
 			}
 
 
-		} else if (Input.GetButtonDown("Fire1") && isGrabbed == true) {
+		} else if ((Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire1")) && isGrabbed == true) {
 			this.isGrabbed = false;
 			GetComponent<Rigidbody> ().useGravity = true;
 			GetComponent<Rigidbody> ().isKinematic = false;
 			this.transform.parent = null;
         }
+        if (isGrabbed)
+        {
+            selected.transform.position = GameObject.Find("Grab").transform.position;
+        }
+
+
 
         //else if (Input.GetKeyDown(KeyCode.Mouse1) && isGrabbed == true)
         //{
@@ -58,7 +64,7 @@ public class Pickup : MonoBehaviour {
 
     }
 
-	void Grab (GameObject o) {
+    void Grab (GameObject o) {
 		if (isGrabbed) {
 			hold = o;
 			o.transform.parent = loc.transform;

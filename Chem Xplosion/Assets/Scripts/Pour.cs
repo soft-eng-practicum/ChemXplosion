@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class Pour : MonoBehaviour
     {
         isPoured = false;
         animate = GetComponent<Animator>();
+        Invoke("DestroyFlask", 3f);
     }
 
     // Update is called once per frame
@@ -30,5 +32,9 @@ public class Pour : MonoBehaviour
             animate.SetBool("poured", false);
             isPoured = false;
         }
+    }
+    void DestroyFlask()
+    {
+        Destroy(gameObject);
     }
 }
