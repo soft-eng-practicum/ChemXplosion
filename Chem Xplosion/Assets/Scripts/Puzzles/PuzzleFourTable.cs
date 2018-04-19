@@ -7,94 +7,40 @@ public class PuzzleFourTable : MonoBehaviour
 
     public static bool isComplete_Puzzle_4 = false;
     public GameObject[] puzzle4Objects;
-    public Pour[] pours;
     public GameObject explosion;
-    public CanvasGroup canvasGroup;
-    bool visible;
-    bool inside = false;
+    public GameObject flaskPrefab;
 
-    private void Start()
-    {
-        visible = false;
-
-        pours = new Pour[puzzle4Objects.Length];
-        for (int i = 0; i < puzzle4Objects.Length; i++)
-        {
-            pours[i] = puzzle4Objects[i].GetComponent<Pour>();
-        }
-
-    }
-
-    private void Update()
-    {
-        if (inside && Input.GetKeyDown("p"))
-        {
-            if (visible)
-            {
-                Hide();
-            }
-            else if (!visible)
-            {
-                Show();
-            }
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            inside = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            inside = false;
-        }
-
-    }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Accept")
+        if (other.tag == "Accept" && Input.GetButtonDown("e"))
         {
-            for (int i = 0; i < puzzle4Objects.Length; i++)
-            {
-                if (pours[i].isPoured)
-                {
-                    isComplete_Puzzle_4 = true;
-                }
-            }
+            Instantiate(flaskPrefab);
+            flaskPrefab.transform.position = new Vector3(1.863f, 1.41967f, 5.749f);
+            flaskPrefab.transform.Rotate(90, 0, 0);
+            flaskPrefab.GetComponent<Pour>().enabled = true;
+            isComplete_Puzzle_4 = true;
+            DestroyChems();
+            flaskPrefab.SetActive(false);
+
         }
-        else if (other.tag == "Deny")
-            for (int i = 0; i < puzzle4Objects.Length; i++)
-            {
-                if (pours[i].isPoured)
-                {
-                    isComplete_Puzzle_4 = false;
-                    Invoke("Explosion", 4);
-                }
-            }
-    }
-
-    void Hide()
-    {
-        canvasGroup.alpha = 0f; //this makes everything transparent
-        canvasGroup.blocksRaycasts = false; //this prevents the UI element to receive input events
-        visible = false;
-    }
-
-    void Show()
-    {
-        canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
-        visible = true;
+        else if (other.tag == "Deny" && Input.GetButtonDown("e"))
+        {
+            Invoke("Explosion", 1);
+        }
     }
 
     public void Explosion()
     {
         Instantiate(explosion, transform.position, transform.rotation);
+    }
+
+    void DestroyChems()
+    {
+        foreach (GameObject item in puzzle4Objects)
+        {
+            Destroy(item);
+
+        }
     }
 }

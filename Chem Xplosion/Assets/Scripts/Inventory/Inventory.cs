@@ -34,7 +34,6 @@ public class Inventory : MonoBehaviour
                 image.AddComponent<CanvasGroup>();
                 image.AddComponent<DragDrop>();
                 image.AddComponent<RemoveFromInventory>();
-                //  image.GetComponent<DragDrop>().dropPanel = GameObject.Find("Puzzle 1 Slot Panel").GetComponent<RectTransform>();
                 itemImages[i].enabled = true;
                 itemImages[i].sprite = items[i].GetComponent<InventoryItem>().chemSprite;
                 image.transform.SetParent(GameObject.Find("Slot" + i).transform);
@@ -57,26 +56,12 @@ public class Inventory : MonoBehaviour
         {
             print("Item{i}: " + items[i]);
             print("ItemToRemove: " + itemToRemove);
-            //print("sss " +items.Length);
-            //items[i] = GameObject.Find(itemToRemove.name);
-            //print("found" + items[i].name);
-            //print(items[i].name);
+
             if (items[i] == chemical)
             {
-                //   GameObject initializeMe = new GameObject();    
-               // string item = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
-                GameObject.Find(item).transform.position = player.transform.position + player.transform.forward *.7f + Vector3.up;
-                //initializeMe.name = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
-                // GameObject.Find(itemToRemove.name.Remove(itemToRemove.name.Length - 1));
-                //initializeMe.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
-                // initializeMe.SetActive(true);
-                //itemToRemove.name = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
-                //itemToRemove = GameObject.Find(itemToRemove.name);
-                //itemToRemove.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
-                //itemToRemove.SetActive(true);   
+                GameObject.Find(item).transform.position = player.transform.position + player.transform.forward *.7f + Vector3.up;  
                 Destroy(itemImages[i]);
                 items[i] = null;
-                // itemToRemove.name = itemToRemove.name + "1";
                 Destroy(itemToRemove);
                 return;
             }

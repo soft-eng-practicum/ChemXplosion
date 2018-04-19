@@ -6,27 +6,23 @@ public class Pour : MonoBehaviour
 {
 
     private Animator animate;
-    Pickup pickup;
     public bool isPoured;
-    private Collider collider; 
 
     // Use this for initialization
     void Start()
     {
         isPoured = false;
         animate = GetComponent<Animator>();
-        pickup = GetComponent<Pickup>();
-        collider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetButtonDown("e") && pickup.isGrabbed && collider.gameObject)
+        if (Input.GetButtonDown("e"))
         {
             //animate.SetBool("poured", true);
-            pickup.selected.GetComponent<Animator>().SetBool("poured", true);
+            animate.SetBool("poured", true);
             isPoured = true;
         }
         if (Input.GetButtonUp("e"))

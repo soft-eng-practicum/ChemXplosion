@@ -22,8 +22,6 @@ public class Test_Text : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		itemCounter = PuzzleOneTable.puzzleOneCounter;
-
 		tempTimer = timer.toggleTimer;
 
 		chestCounter = ItemClear.ascounter;

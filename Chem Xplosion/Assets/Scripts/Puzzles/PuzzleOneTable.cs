@@ -4,29 +4,28 @@ using UnityEngine;
 
 public class PuzzleOneTable : MonoBehaviour
 {
-
+    Inventory inventory;
     public static bool isComplete_Puzzle_1 = false;
-    public static int puzzleOneCounter = 0;
     public GameObject[] puzzleOneItems;
     public GameObject explosion;
-
-    void OnCollisionEnter(Collision col)
+    public GameObject flaskPrefab;
+    public void Start()
     {
-        if (col.gameObject.tag == "Accept")
-        {
-            puzzleOneCounter++;
-        }
-        if (col.gameObject.tag == "Deny")
-        {
-            
-        }
+        inventory = GameObject.Find("InventoryCanvas").GetComponent<Inventory>();
+
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Accept" && Input.GetButtonDown("e"))
         {
+            Instantiate(flaskPrefab);
+            flaskPrefab.transform.position = new Vector3(1.863f,1.41967f,5.749f);
+            flaskPrefab.transform.Rotate(90,0,0);
+            flaskPrefab.GetComponent<Pour>().enabled = true;
             isComplete_Puzzle_1 = true;
             DestroyChems();
+           // flaskPrefab.SetActive(false);
+
         }
         else if (other.tag == "Deny" && Input.GetButtonDown("e"))
         {
@@ -44,17 +43,6 @@ public class PuzzleOneTable : MonoBehaviour
         foreach (GameObject item in puzzleOneItems)
         {
             Destroy(item);
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        //press to solve puzzle
-        if (Input.GetButtonDown("e") && puzzleOneCounter == 1)
-        {
-            Invoke("DestroyChems", 2);
         }
     }
 
