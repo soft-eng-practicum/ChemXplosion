@@ -23,18 +23,15 @@ public class PuzzleOneTable : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Accept")
+        if (other.tag == "Accept" && Input.GetButtonDown("e"))
         {
-            for (int i = 0; i < puzzleOneItems.Length; i++)
-            {
-                
-            }
+            isComplete_Puzzle_1 = true;
+            DestroyChems();
         }
-        else if (other.tag == "Deny")
-            for (int i = 0; i < puzzleOneItems.Length; i++)
-            {
-                
-            }
+        else if (other.tag == "Deny" && Input.GetButtonDown("e"))
+        {
+            Invoke("Explosion", 1);
+        }
     }
 
     public void Explosion()
