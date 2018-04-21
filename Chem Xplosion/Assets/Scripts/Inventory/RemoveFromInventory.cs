@@ -19,11 +19,7 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
     public void Start()
 
     {
-
         inventory = GameObject.Find("InventoryCanvas").GetComponent<Inventory>();
-
-
-
     }
 
     public void OnPointerEnter(PointerEventData eventData)
