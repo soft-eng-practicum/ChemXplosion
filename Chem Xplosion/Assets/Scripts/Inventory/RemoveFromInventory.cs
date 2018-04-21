@@ -39,8 +39,9 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
     {
 
         itemToRemove = gameObject;
+        string item = itemToRemove.name.Remove(itemToRemove.name.Length - 1);
         print(itemToRemove + " will be removed");
-        tooltip.transform.GetChild(0).GetComponent<Text>().text = itemToRemove.name;
+        tooltip.transform.GetChild(0).GetComponent<Text>().text = item;
         tooltip.SetActive(true);
     }
 
@@ -59,6 +60,7 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
             print(itemToRemove.name);
             inventory.RemoveItem(itemToRemove);
             print("removed" + gameObject.name);
+            tooltip.SetActive(false);
         }
         
     }
