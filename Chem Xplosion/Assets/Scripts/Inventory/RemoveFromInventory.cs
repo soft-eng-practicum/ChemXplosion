@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine.EventSystems;
-
-
+using UnityEngine.UI;
 
 public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 
 {
     public static GameObject itemToRemove;
+    public GameObject tooltip;
     Inventory inventory;
 
 
@@ -26,18 +26,29 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
 
     }
 
+    public void Update()
+    {
+        if(tooltip.activeSelf)
+        {
+            tooltip.transform.position = Input.mousePosition;
+        }
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
 
     {
 
         itemToRemove = gameObject;
         print(itemToRemove + " will be removed");
+        tooltip.transform.GetChild(0).GetComponent<Text>().text = itemToRemove.name;
+        tooltip.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
 
     {
         itemToRemove = null;
+        tooltip.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
