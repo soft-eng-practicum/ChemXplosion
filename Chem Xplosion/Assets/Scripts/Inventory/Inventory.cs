@@ -1,11 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Inventory : MonoBehaviour
 {
 
+    
     public Image[] itemImages = new Image[numItemSlots];
     public GameObject[] items = new GameObject[numItemSlots];
     public Vector3 dropPoint;
@@ -35,6 +38,7 @@ public class Inventory : MonoBehaviour
                 image.AddComponent<CanvasGroup>();
                 image.AddComponent<DragDrop>();
                 image.AddComponent<RemoveFromInventory>();
+                image.GetComponent<RemoveFromInventory>().tooltip = GetComponent<Tooltip>().tooltip;
                 itemImages[i].enabled = true;
                 itemImages[i].sprite = items[i].GetComponent<InventoryItem>().chemSprite;
                 image.transform.SetParent(GameObject.Find("Slot" + i).transform);
