@@ -66,4 +66,19 @@ public class UnitTesting
         Assert.IsTrue(generator.GetComponent<AudioSource>().enabled); //Test will pass if the generators audioSource was enabled
 
     }
+
+    [UnityTest]
+    public IEnumerator DestroyPuzzleOneLock() //Test if desstroyLock() correctly destroys the associated GameObject
+    {
+        GameObject puzzle1 = new GameObject(); //Puzzle 1 Game Object
+        puzzle1.AddComponent<PuzzleOneTable>(); // Add script to puzzle 1
+        GameObject exp = new GameObject(); // Explosion gameobject
+        PuzzleOneTable.isComplete_Puzzle_1 = true; //Simulates the puzzle being solved
+        GameObject doorLock = new GameObject(); //GameObject to be destroyed
+        doorLock.AddComponent<Onhit>(); //add OnHit script to doorLock
+        doorLock.GetComponent<Onhit>().explosion = exp;
+        doorLock.GetComponent<Onhit>().destroyLock(); //Call destroyLock()
+        yield return null; //Wait one frame
+        Assert.IsTrue(doorLock == null); //Test will pass if doorLock gameObject no longer exists
+    }
 }
