@@ -5,9 +5,12 @@ using UnityEngine;
 public class Tooltip : MonoBehaviour {
 
     public GameObject tooltip;
+    public GameObject mousetooltip;
+    public GameObject leftclickobject;
+    public GameObject rightclickobject;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

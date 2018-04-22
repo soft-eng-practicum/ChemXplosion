@@ -43,6 +43,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private AudioSource m_AudioSource;
         public float rotateSpeed = 6;
         private GameObject tooltip;
+        private GameObject tooltip2;
 
         // Use this for initialization
         private void Start()
@@ -58,7 +59,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
             m_MouseLook.Init(transform, m_Camera.transform);
             tooltip = GameObject.Find("Tooltip");
+            tooltip2 = GameObject.Find("MouseTooltip");
             tooltip.SetActive(false);
+            tooltip2.SetActive(false);
         }
 
 

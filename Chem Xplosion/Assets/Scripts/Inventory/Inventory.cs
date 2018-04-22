@@ -39,6 +39,10 @@ public class Inventory : MonoBehaviour
                 image.AddComponent<DragDrop>();
                 image.AddComponent<RemoveFromInventory>();
                 image.GetComponent<RemoveFromInventory>().tooltip = GetComponent<Tooltip>().tooltip;
+                image.GetComponent<RemoveFromInventory>().mousetooltip = GetComponent<Tooltip>().mousetooltip;
+                image.GetComponent<RemoveFromInventory>().leftclickobject = GetComponent<Tooltip>().leftclickobject;
+                image.GetComponent<RemoveFromInventory>().rightclickobject = GetComponent<Tooltip>().rightclickobject;
+                
                 itemImages[i].enabled = true;
                 itemImages[i].sprite = items[i].GetComponent<InventoryItem>().chemSprite;
                 image.transform.SetParent(GameObject.Find("Slot" + i).transform);
