@@ -7,17 +7,27 @@ public class DoorOpener : MonoBehaviour {
 	private Animator dAnimate;
 	public static int dCounter = 0;
 	public static bool trigger = false;
-	// Use this for initialization
-	void Start () {
+
+    private bool playAudio;
+    AudioSource audiosrc;
+    public AudioClip DoorOpen;
+
+    // Use this for initialization
+    void Start () {
 		dAnimate = GetComponent<Animator> ();
+        audiosrc = GetComponent<AudioSource>();
+        playAudio = false;
 	}
 
 	void OnTriggerEnter(Collider col){
 		if (col.tag == "Player") {
 			dAnimate.SetBool ("open", true);
 			trigger = true;
-			//dCounter++;
-		}
+
+            audiosrc.PlayOneShot(DoorOpen);
+            playAudio = true;
+            //dCounter++;
+        }
 		}
 
 	void OnTriggerExit(Collider col){
@@ -30,7 +40,8 @@ public class DoorOpener : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	}
+
+    }
 
 	void closeDoor(){
 		dAnimate.SetBool ("open", false);
