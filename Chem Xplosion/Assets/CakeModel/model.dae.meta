@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: 938040fdbd2c28341ba4376f3b57494f
+timeCreated: 1524448886
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Candle
+    100002: Candle_Holder
+    100004: group_0
+    100006: group_1
+    100008: group_10
+    100010: group_11
+    100012: group_12
+    100014: group_13
+    100016: group_14
+    100018: group_15
+    100020: group_16
+    100022: group_17
+    100024: group_18
+    100026: group_19
+    100028: group_2
+    100030: group_20
+    100032: group_21
+    100034: group_22
+    100036: group_23
+    100038: group_24
+    100040: group_25
+    100042: group_26
+    100044: group_27
+    100046: group_28
+    100048: group_29
+    100050: group_3
+    100052: group_30
+    100054: group_4
+    100056: group_5
+    100058: group_6
+    100060: group_7
+    100062: group_8
+    100064: group_9
+    100066: ID268
+    100068: ID276
+    100070: ID293
+    100072: ID299
+    100074: ID314
+    100076: ID320
+    100078: ID335
+    100080: ID341
+    100082: ID349
+    100084: ID355
+    100086: ID378
+    100088: ID386
+    100090: ID396
+    100092: ID406
+    100094: ID414
+    100096: ID462
+    100098: ID74
+    100100: ID82
+    100102: instance_0
+    100104: instance_1
+    100106: //RootNode
+    100108: skp_camera_Last_Saved_SketchUp_View
+    100110: sphere
+    100112: sphere 1
+    100114: sphere 2
+    100116: sphere 3
+    100118: sphere 4
+    100120: sphere 5
+    100122: sphere 6
+    100124: sphere 7
+    400000: Candle
+    400002: Candle_Holder
+    400004: group_0
+    400006: group_1
+    400008: group_10
+    400010: group_11
+    400012: group_12
+    400014: group_13
+    400016: group_14
+    400018: group_15
+    400020: group_16
+    400022: group_17
+    400024: group_18
+    400026: group_19
+    400028: group_2
+    400030: group_20
+    400032: group_21
+    400034: group_22
+    400036: group_23
+    400038: group_24
+    400040: group_25
+    400042: group_26
+    400044: group_27
+    400046: group_28
+    400048: group_29
+    400050: group_3
+    400052: group_30
+    400054: group_4
+    400056: group_5
+    400058: group_6
+    400060: group_7
+    400062: group_8
+    400064: group_9
+    400066: ID268
+    400068: ID276
+    400070: ID293
+    400072: ID299
+    400074: ID314
+    400076: ID320
+    400078: ID335
+    400080: ID341
+    400082: ID349
+    400084: ID355
+    400086: ID378
+    400088: ID386
+    400090: ID396
+    400092: ID406
+    400094: ID414
+    400096: ID462
+    400098: ID74
+    400100: ID82
+    400102: instance_0
+    400104: instance_1
+    400106: //RootNode
+    400108: skp_camera_Last_Saved_SketchUp_View
+    400110: sphere
+    400112: sphere 1
+    400114: sphere 2
+    400116: sphere 3
+    400118: sphere 4
+    400120: sphere 5
+    400122: sphere 6
+    400124: sphere 7
+    2000000: skp_camera_Last_Saved_SketchUp_View
+    2100000: material_44
+    2100002: material_43
+    2100004: material_42
+    2100006: material_40
+    2100008: material_24
+    2100010: material_41
+    2100012: material_45
+    2100014: Metal_Corrogated_Shiny
+    2100016: Cladding_Stucco_White
+    2100018: Stone_Pavers_Flagstone_Gray
+    2100020: material_35
+    2100022: material_15
+    2100024: material_22
+    2100026: material_39
+    2100028: material_38
+    2100030: material_23
+    2100032: __Cladding_Stucco_White_1
+    2100034: Color_008
+    2100036: Color_D02
+    2300000: Candle
+    2300002: group_10
+    2300004: group_11
+    2300006: group_12
+    2300008: group_13
+    2300010: group_14
+    2300012: group_15
+    2300014: group_16
+    2300016: group_17
+    2300018: group_18
+    2300020: group_19
+    2300022: group_20
+    2300024: group_22
+    2300026: group_23
+    2300028: group_24
+    2300030: group_25
+    2300032: group_27
+    2300034: group_29
+    2300036: group_3
+    2300038: group_30
+    2300040: group_4
+    2300042: group_5
+    2300044: group_6
+    2300046: group_7
+    2300048: group_8
+    2300050: group_9
+    2300052: ID268
+    2300054: ID276
+    2300056: ID293
+    2300058: ID299
+    2300060: ID314
+    2300062: ID320
+    2300064: ID335
+    2300066: ID341
+    2300068: ID349
+    2300070: ID355
+    2300072: ID378
+    2300074: ID386
+    2300076: ID396
+    2300078: ID406
+    2300080: ID414
+    2300082: ID462
+    2300084: ID74
+    2300086: ID82
+    2300088: sphere
+    2300090: sphere 1
+    2300092: sphere 2
+    2300094: sphere 3
+    2300096: sphere 4
+    2300098: sphere 5
+    2300100: sphere 6
+    2300102: sphere 7
+    3300000: Candle
+    3300002: group_10
+    3300004: group_11
+    3300006: group_12
+    3300008: group_13
+    3300010: group_14
+    3300012: group_15
+    3300014: group_16
+    3300016: group_17
+    3300018: group_18
+    3300020: group_19
+    3300022: group_20
+    3300024: group_22
+    3300026: group_23
+    3300028: group_24
+    3300030: group_25
+    3300032: group_27
+    3300034: group_29
+    3300036: group_3
+    3300038: group_30
+    3300040: group_4
+    3300042: group_5
+    3300044: group_6
+    3300046: group_7
+    3300048: group_8
+    3300050: group_9
+    3300052: ID268
+    3300054: ID276
+    3300056: ID293
+    3300058: ID299
+    3300060: ID314
+    3300062: ID320
+    3300064: ID335
+    3300066: ID341
+    3300068: ID349
+    3300070: ID355
+    3300072: ID378
+    3300074: ID386
+    3300076: ID396
+    3300078: ID406
+    3300080: ID414
+    3300082: ID462
+    3300084: ID74
+    3300086: ID82
+    3300088: sphere
+    3300090: sphere 1
+    3300092: sphere 2
+    3300094: sphere 3
+    3300096: sphere 4
+    3300098: sphere 5
+    3300100: sphere 6
+    3300102: sphere 7
+    4300000: sphere
+    4300002: sphere
+    4300004: sphere
+    4300006: sphere
+    4300008: sphere
+    4300010: sphere
+    4300012: group_3
+    4300014: ID74
+    4300016: ID82
+    4300018: group_4
+    4300020: group_5
+    4300022: group_6
+    4300024: group_7
+    4300026: group_8
+    4300028: group_9
+    4300030: group_10
+    4300032: group_11
+    4300034: group_12
+    4300036: group_13
+    4300038: group_14
+    4300040: group_15
+    4300042: group_16
+    4300044: group_17
+    4300046: group_18
+    4300048: group_19
+    4300050: group_20
+    4300052: group_22
+    4300054: ID268
+    4300056: ID276
+    4300058: group_23
+    4300060: ID293
+    4300062: ID299
+    4300064: group_24
+    4300066: ID314
+    4300068: ID320
+    4300070: group_25
+    4300072: ID335
+    4300074: ID341
+    4300076: ID349
+    4300078: ID355
+    4300080: group_27
+    4300082: ID378
+    4300084: ID386
+    4300086: ID396
+    4300088: ID406
+    4300090: ID414
+    4300092: sphere
+    4300094: sphere
+    4300096: Candle
+    4300098: group_29
+    4300100: ID462
+    4300102: group_30
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
