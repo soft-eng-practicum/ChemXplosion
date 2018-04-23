@@ -12,6 +12,9 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
 {
     public static GameObject itemToRemove;
     public GameObject tooltip;
+    public GameObject mousetooltip;
+    public GameObject leftclickobject;
+    public GameObject rightclickobject;
     Inventory inventory;
 
 
@@ -39,6 +42,9 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
         print(itemToRemove + " will be removed");
         tooltip.transform.GetChild(0).GetComponent<Text>().text = item;
         tooltip.SetActive(true);
+        mousetooltip.SetActive(true);
+        leftclickobject.transform.GetChild(0).GetComponent<Text>().text = "Move";
+        rightclickobject.transform.GetChild(0).GetComponent<Text>().text = "Equip";
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -46,6 +52,7 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
     {
         itemToRemove = null;
         tooltip.SetActive(false);
+        mousetooltip.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
