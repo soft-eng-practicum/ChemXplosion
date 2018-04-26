@@ -33,8 +33,8 @@ public class Inventory : MonoBehaviour
                 //creating new game object, placing it in correct area, adding correct components needed for inventory item
                 GameObject image = new GameObject();
                 itemImages[i] = image.AddComponent<Image>();
-                image.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 40);
-                image.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 40);
+                //image.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 50);
+                //image.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 50);
                 image.AddComponent<CanvasGroup>();
                 image.AddComponent<DragDrop>();
                 image.AddComponent<RemoveFromInventory>();

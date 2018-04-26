@@ -20,6 +20,8 @@ public class Puzzle2 : MonoBehaviour {
             flaskPrefab.GetComponent<Pour>().enabled = true;
             isComplete_Puzzle_2 = true;
             DestroyChems();
+            GameObject.Find("Tooltip").SetActive(false);
+            GameObject.Find("MouseTooltip").SetActive(false);
             //flaskPrefab.SetActive(false);
 
         }

@@ -44,7 +44,7 @@ public class RemoveFromInventory : MonoBehaviour, IPointerEnterHandler, IPointer
         tooltip.SetActive(true);
         mousetooltip.SetActive(true);
         leftclickobject.transform.GetChild(0).GetComponent<Text>().text = "Move";
-        rightclickobject.transform.GetChild(0).GetComponent<Text>().text = "Equip";
+        rightclickobject.transform.GetChild(0).GetComponent<Text>().text = "Drop";
     }
 
     public void OnPointerExit(PointerEventData eventData)
