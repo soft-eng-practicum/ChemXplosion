@@ -30,6 +30,8 @@ public class ChestOpen : MonoBehaviour {
 	void Update () {
 		if(Input.GetButtonDown("e") && test == true){
 			dAnimate.SetBool ("open", true);
-		}
+            GetComponent<ItemTooltip>().tooltip.SetActive(false);
+            Destroy(GetComponent<ItemTooltip>());
+        }
 	}
 }

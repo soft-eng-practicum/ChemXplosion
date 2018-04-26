@@ -16,6 +16,7 @@ public class PuzzleOneTable : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
+        
         if (other.tag == "Accept" && Input.GetButtonDown("e"))
         {
             Instantiate(flaskPrefab, new Vector3(1.863f, 1.41967f, 5.749f), Quaternion.identity);
@@ -24,7 +25,9 @@ public class PuzzleOneTable : MonoBehaviour
             flaskPrefab.GetComponent<Pour>().enabled = true;
             isComplete_Puzzle_1 = true;
             DestroyChems();
-           // flaskPrefab.SetActive(false);
+            GameObject.Find("Tooltip").SetActive(false);
+            GameObject.Find("MouseTooltip").SetActive(false);
+            // flaskPrefab.SetActive(false);
 
         }
         else if (other.tag == "Deny" && Input.GetButtonDown("e"))
