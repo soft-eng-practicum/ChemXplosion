@@ -67,7 +67,7 @@ public class Pickup : MonoBehaviour {
     void Grab (GameObject o) {
 		if (isGrabbed) {
 			hold = o;
-			o.transform.parent = loc.transform;
+			//o.transform.parent = loc.transform;
 		o.GetComponent<Rigidbody> ().useGravity = false;
 		o.transform.position = hands.position;
 		}
