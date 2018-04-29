@@ -1,0 +1,8 @@
+var class_unity_standard_assets_1_1_characters_1_1_first_person_1_1_rigidbody_first_person_controller_1_1_advanced_settings =
+[
+    [ "airControl", "class_unity_standard_assets_1_1_characters_1_1_first_person_1_1_rigidbody_first_person_controller_1_1_advanced_settings.html#ad1ff540811836d721548857f5ccd5dc2", null ],
+    [ "groundCheckDistance", "class_unity_standard_assets_1_1_characters_1_1_first_person_1_1_rigidbody_first_person_controller_1_1_advanced_settings.html#a27942c3ca5d422c0a08e83e4d4405983", null ],
+    [ "shellOffset", "class_unity_standard_assets_1_1_characters_1_1_first_person_1_1_rigidbody_first_person_controller_1_1_advanced_settings.html#a3bb432492c59b063230074f05b953504", null ],
+    [ "slowDownRate", "class_unity_standard_assets_1_1_characters_1_1_first_person_1_1_rigidbody_first_person_controller_1_1_advanced_settings.html#af92b3ea2c924725b151ddfeeb9922580", null ],
+    [ "stickToGroundHelperDistance", "class_unity_standard_assets_1_1_characters_1_1_first_person_1_1_rigidbody_first_person_controller_1_1_advanced_settings.html#a182c4f372fb40b98e06ad743aac51692", null ]
+];
