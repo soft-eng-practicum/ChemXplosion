@@ -1,5 +1,5 @@
 # ChemXplosion
-<img src="Documentation/ChemXplosion_Poster.jpg" atl="ChemXplosion_Poster" align="center">
+<img src="Documentation/Spring 2018/ChemXplosion Poster.jpg" atl="ChemXplosion_Poster" align="center">
 
 ### Table of Contents
 * [Description](https://github.com/soft-eng-practicum/tech-challenged#description)
@@ -13,8 +13,8 @@
 ### Documentation
 * [Developer Documentation](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
 * [Licensing](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/License_Agreement.docx)
-* [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Documentation/Requirements_Version2.docx)
-* [User Manual](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
+* [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Requirements.txt)
+* [Developer Manual](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
 * [Zenhub](https://app.zenhub.com/workspace/o/soft-eng-practicum/tech-challenged/boards?repos=101439795)
 
 ### Team Info
@@ -23,7 +23,7 @@
 * Team Name: ChemJam
 * Repository Location: https://github.com/soft-eng-practicum/ChemXplosion
 * Communication: Software Development II Slack (#team_chemjam)
-* Progress Tracking: https://trello.com/b/G88KTFcW/chemjam
+* Progress Tracking: http://itec-gunay.duckdns.org:8080/secure/RapidBoard.jspa?rapidView=27&projectKey=CHEMJAM
 1. **Hieu Dinh** - Lead Programmer | Organizer | Data Modeler |
 2. **Evan Lamkie** - UI/UX Design
 3. **Michael Lopez** - | Sound Engineer | Documentations Lead | :stuck_out_tongue_winking_eye:

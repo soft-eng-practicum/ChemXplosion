@@ -3,7 +3,7 @@ Rae Vroman, Michael Lopez, Alex Croghan, Hieu Dinh, Evan Lamkie
 ChemXplosion
 
 Requirements Document
-Revision 1.0
+Revision v1.1
 
 
 1. Introduction
@@ -30,34 +30,34 @@ Goals:
 
 Functional Requirements:
 
-- The player must be able to access and complete the chemical equation puzzles
-- The player must have access to a map
-- The player must be able to view their own location
-- The game must have a tutorial system that explains the basic functions of the game
-- The game must provide a second level containing advanced chemical equations to solve
-- The player must be able to access an inventory screen
-- The player must be able to place items within a backpack
-- The game must contain traps that could potentially fail the player
-- The game must contain BGM (Background Music)
-- The game must contain soundFX for all player interactions
-- The game must allow the player to save their current progress
-- The game must allow the player to load from a previous progression
-- New 3D models must replace existing models that are irrelevant
+- The player must be able to access and complete the chemical equation puzzles (Completed)
+- The player must have access to a map (WIP - Minimap added)
+- The player must be able to view their own location (Completed - Minimap)
+- The game must have a tutorial system that explains the basic functions of the game (WIP)
+- The game must provide a second level containing advanced chemical equations to solve (Incomplete)
+- The player must be able to access an inventory screen (Completed)
+- The player must be able to place items within a backpack (Completed)
+- The game must contain traps that could potentially fail the player (Incomplete)
+- The game must contain BGM (Completed)
+- The game must contain soundFX for all player interactions (WIP)
+- The game must allow the player to save their current progress (Incomplete)
+- The game must allow the player to load from a previous progression (Incomplete)
+- New 3D models must replace existing models that are irrelevant (Completed)
 
 Other Requirements:
 
-- The code must be cleaned up and organized
-- The existing equation must be made more legible
+- The code must be cleaned up and organized (Completed)
+- The existing equation must be made more legible (Completed)
 - The first level must be fixed in order to be completed
-	- Fix ability to jump through the ceiling and fall through the map
-	- Fix chemical equation related issues
-	- Fix ability to pass through a closed door (first locked door - right side)
-	- Fix ability to pass through 2nd reactor door and unable to exit
-- Remove the item count on GUI
-- Fix GUI related issues including the main menu
-- Implement time limits on certain equations/rooms
-- Fix issues with movement
-- Additional graphical enhancements to improve quality of scenery
+	- Fix ability to jump through the ceiling and fall through the map (Completed)
+	- Fix chemical equation related issues (Completed)
+	- Fix ability to pass through a closed door (first locked door - right side) (Completed)
+	- Fix ability to pass through 2nd reactor door and unable to exit (Completed)
+- Remove the item count on GUI (Completed)
+- Fix GUI related issues including the main menu (WIP)
+- Implement time limits on certain equations/rooms (Incomplete)
+- Fix issues with movement (Completed)
+- Additional graphical enhancements to improve quality of scenery (WIP)
 
 	
 
