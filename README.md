@@ -14,7 +14,7 @@
 * [Developer Documentation](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
 * [Licensing](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/License_Agreement.docx)
 * [Requirements](https://github.com/soft-eng-practicum/tech-challenged/tree/master/Requirements.txt)
-* [User Manual](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
+* [Developer Manual](https://github.com/soft-eng-practicum/tech-challenged/blob/master/Documentation/Dev%20Documentation.docx)
 * [Zenhub](https://app.zenhub.com/workspace/o/soft-eng-practicum/tech-challenged/boards?repos=101439795)
 
 ### Team Info
@@ -23,7 +23,7 @@
 * Team Name: ChemJam
 * Repository Location: https://github.com/soft-eng-practicum/ChemXplosion
 * Communication: Software Development II Slack (#team_chemjam)
-* Progress Tracking: https://trello.com/b/G88KTFcW/chemjam
+* Progress Tracking: http://itec-gunay.duckdns.org:8080/secure/RapidBoard.jspa?rapidView=27&projectKey=CHEMJAM
 1. **Hieu Dinh** - Lead Programmer | Organizer | Data Modeler |
 2. **Evan Lamkie** - UI/UX Design
 3. **Michael Lopez** - | Sound Engineer | Documentations Lead | :stuck_out_tongue_winking_eye:
